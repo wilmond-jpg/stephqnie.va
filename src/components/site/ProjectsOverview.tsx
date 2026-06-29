@@ -19,22 +19,6 @@ const projects = [
   },
   {
     n: "02",
-    name: "De Cocatris Gamefarm",
-    cat: "Social Media Management & Brand Content",
-    s: "Two brands, one client — gamefowl breeding and a resto-events venue run in parallel.",
-    href: "#de-cocatris",
-    img: deCocatrisImg,
-  },
-  {
-    n: "03",
-    name: "The Village",
-    cat: "Brand Identity, Menus & Event Content",
-    s: "A full resto-bar identity built from blank slate — logo, menus, and weekly events.",
-    href: "#the-village",
-    img: theVillageImg,
-  },
-  {
-    n: "04",
     name: "Aura Energy Crystals",
     cat: "Small Business Branding, Social Media & Customer Experience",
     s: "A product-based brand managed end-to-end from visual identity to post-purchase materials.",
@@ -42,14 +26,58 @@ const projects = [
     img: auraCrystalsImg,
   },
   {
-    n: "05",
+    n: "03",
     name: "Lumera",
     cat: "Concept Project — Brand Design, Social Media & Operations System",
     s: "A skincare brand concept that grew into a fully working VA operations system.",
     href: "#lumera",
     img: lumeraImg,
   },
+  {
+    n: "04",
+    name: "De Cocatris Gamefarm",
+    cat: "Social Media Management & Brand Content",
+    s: "Two brands, one client — gamefowl breeding and a resto-events venue run in parallel.",
+    href: "#de-cocatris",
+    img: deCocatrisImg,
+  },
+  {
+    n: "05",
+    name: "The Village",
+    cat: "Brand Identity, Menus & Event Content",
+    s: "A full resto-bar identity built from blank slate — logo, menus, and weekly events.",
+    href: "#the-village",
+    img: theVillageImg,
+  },
 ];
+
+function ProjectCard({ p }: { p: (typeof projects)[number] }) {
+  return (
+    <a
+      href={p.href}
+      key={p.name}
+      className="group flex flex-col gap-5 border border-gold/15 bg-soft-black/40 p-6 transition-all hover:-translate-y-1 hover:border-gold/40"
+    >
+      <Reveal className="aspect-[4/5] w-full">
+        <img
+          src={p.img}
+          alt={`${p.name} cover`}
+          className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110 transition-transform duration-500 group-hover:scale-[1.03]"
+          loading="lazy"
+        />
+      </Reveal>
+      <div className="text-gold text-[0.7rem] tracking-[0.22em] uppercase">
+        {p.n} · {p.cat}
+      </div>
+      <h3 className="font-display text-cream text-2xl leading-tight">{p.name}</h3>
+      <p className="text-cream/70 text-sm leading-relaxed">{p.s}</p>
+      <div className="text-yellow-pale mt-auto inline-flex items-center gap-2 text-[0.75rem] tracking-[0.18em] uppercase">
+        View Project
+        <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+      </div>
+    </a>
+  );
+}
 
 export function ProjectsOverview() {
   return (
@@ -68,31 +96,17 @@ export function ProjectsOverview() {
         </p>
 
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((p) => (
-            <a
-              href={p.href}
-              key={p.name}
-              className="group flex flex-col gap-5 border border-gold/15 bg-soft-black/40 p-6 transition-all hover:-translate-y-1 hover:border-gold/40"
-            >
-              <Reveal className="aspect-[4/5] w-full">
-                <img
-                  src={p.img}
-                  alt={`${p.name} cover`}
-                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110 transition-transform duration-500 group-hover:scale-[1.03]"
-                  loading="lazy"
-                />
-              </Reveal>
-              <div className="text-gold text-[0.7rem] tracking-[0.22em] uppercase">
-                {p.n} · {p.cat}
-              </div>
-              <h3 className="font-display text-cream text-2xl leading-tight">{p.name}</h3>
-              <p className="text-cream/70 text-sm leading-relaxed">{p.s}</p>
-              <div className="text-yellow-pale mt-auto inline-flex items-center gap-2 text-[0.75rem] tracking-[0.18em] uppercase">
-                View Project
-                <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
-              </div>
-            </a>
+          {projects.slice(0, 3).map((p) => (
+            <ProjectCard key={p.name} p={p} />
           ))}
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <div className="grid w-full gap-8 sm:grid-cols-2 lg:w-[calc(66.66%-1rem)]">
+            {projects.slice(3).map((p) => (
+              <ProjectCard key={p.name} p={p} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
