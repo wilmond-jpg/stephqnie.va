@@ -39,43 +39,43 @@ export function ProjectTheVillage() {
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <Reveal className="aspect-square w-full">
+            <Reveal className="w-full bg-card-warm">
               <img
                 src={logo}
                 alt="Neon logo"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                className="w-full h-auto object-contain"
                 loading="lazy"
               />
             </Reveal>
-            <Reveal className="aspect-square w-full">
+            <Reveal className="w-full bg-card-warm">
               <img
                 src={openHours}
                 alt="Open hours graphic"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                className="w-full h-auto object-contain"
                 loading="lazy"
               />
             </Reveal>
-            <Reveal className="aspect-[3/4] w-full">
+            <Reveal className="w-full bg-card-warm">
               <img
                 src={menu}
                 alt="Menu design"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                className="w-full h-auto object-contain"
                 loading="lazy"
               />
             </Reveal>
-            <Reveal className="aspect-[3/4] w-full">
+            <Reveal className="w-full bg-card-warm">
               <img
                 src={eventPoster}
                 alt="Event poster"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                className="w-full h-auto object-contain"
                 loading="lazy"
               />
             </Reveal>
-            <Reveal className="col-span-2 aspect-square w-full">
+            <Reveal className="w-full bg-card-warm col-span-2">
               <img
                 src={testimonial}
                 alt="Testimonial graphic"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                className="w-full h-auto object-contain"
                 loading="lazy"
               />
             </Reveal>
