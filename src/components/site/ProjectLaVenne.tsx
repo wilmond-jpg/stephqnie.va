@@ -1,7 +1,9 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 import { StatBlock } from "./StatBlock";
+import instagramPost from "@/assets/projects/la-venne/instagram-post.jpg";
+import curatedFeed from "@/assets/projects/la-venne/curated-feed.jpg";
+import topPost from "@/assets/projects/la-venne/top-post.jpg";
 
 export function ProjectLaVenne() {
   return (
@@ -42,10 +44,22 @@ export function ProjectLaVenne() {
           </div>
 
           <div className="grid gap-6">
-            <ImagePlaceholder label="Instagram jewelry post screenshot (1:1)" aspect="square" />
+            <img
+              src={instagramPost}
+              alt="Instagram jewelry post screenshot"
+              className="aspect-[4/5] w-full object-cover"
+            />
             <div className="grid grid-cols-2 gap-6">
-              <ImagePlaceholder label="Curated feed (4:5)" aspect="portrait" />
-              <ImagePlaceholder label="Top post (4:5)" aspect="portrait" />
+              <img
+                src={curatedFeed}
+                alt="Curated feed"
+                className="aspect-[4/5] w-full object-cover"
+              />
+              <img
+                src={topPost}
+                alt="Top post"
+                className="aspect-[4/5] w-full object-cover"
+              />
             </div>
           </div>
         </div>
