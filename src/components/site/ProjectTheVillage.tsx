@@ -16,7 +16,7 @@ export function ProjectTheVillage() {
           <PageNumber index={7} total={12} />
         </div>
 
-        <div className="mt-10 max-w-2xl">
+        <div className="mt-10">
           <h2 className="font-display text-6xl leading-[0.95] sm:text-7xl">The Village.</h2>
           <p className="text-brown-deep/85 mt-8 leading-relaxed">
             I built The Village's entire resto-bar identity from a blank slate — including the logo,
