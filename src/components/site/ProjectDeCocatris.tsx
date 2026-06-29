@@ -17,41 +17,41 @@ export function ProjectDeCocatris() {
         </div>
 
         <div className="mt-10 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <div className="grid gap-6">
-            <Reveal className="aspect-[16/9] w-full">
+          <div className="flex flex-col gap-6">
+            <Reveal className="bg-card-warm">
               <img
                 src={banner}
                 alt="De Cocatris banner"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                className="w-full h-auto object-contain"
                 loading="lazy"
               />
             </Reveal>
-            <div className="grid grid-cols-2 gap-6">
-              <Reveal className="aspect-square w-full bg-card-warm">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 items-start">
+              <Reveal className="bg-card-warm">
                 <img
                   src={logo}
                   alt="Gamefarm logo"
-                  className="h-full w-full object-scale-down"
+                  className="w-full h-auto object-contain"
                   loading="lazy"
                 />
               </Reveal>
-              <Reveal className="aspect-square w-full">
+              <Reveal className="bg-card-warm">
                 <img
                   src={bloodlines}
                   alt="Bloodlines reference"
-                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                  className="w-full h-auto object-contain"
+                  loading="lazy"
+                />
+              </Reveal>
+              <Reveal className="bg-card-warm">
+                <img
+                  src={facebookResults}
+                  alt="Facebook results screenshot"
+                  className="w-full h-auto object-contain"
                   loading="lazy"
                 />
               </Reveal>
             </div>
-            <Reveal className="aspect-square w-full">
-              <img
-                src={facebookResults}
-                alt="Facebook results screenshot"
-                className="h-full w-full object-scale-down border border-gold/20 shadow-md shadow-black/60 brightness-110"
-                loading="lazy"
-              />
-            </Reveal>
           </div>
 
           <div>
