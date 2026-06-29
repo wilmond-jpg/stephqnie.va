@@ -1,6 +1,5 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 import { StatBlock } from "./StatBlock";
 import { ExternalLink } from "./ExternalLink";
 import moodboard from "@/assets/projects/lumera/moodboard.png";
@@ -11,6 +10,11 @@ import ghlWebsite from "@/assets/projects/gohighlevel/website.png";
 import ghlForm from "@/assets/projects/gohighlevel/form.png";
 import ghlBooking from "@/assets/projects/gohighlevel/booking-calendar.png";
 import ghlProductPage from "@/assets/projects/gohighlevel/product-page.png";
+import opsSheets from "@/assets/projects/operations-layer/google-sheets.png";
+import opsZapier from "@/assets/projects/operations-layer/zapier.png";
+import opsTrello from "@/assets/projects/operations-layer/trello.png";
+import opsAsana from "@/assets/projects/operations-layer/asana.png";
+import opsWeekly from "@/assets/projects/operations-layer/weekly-report.png";
 
 const lumeraWhatIDid = [
   {
@@ -289,11 +293,11 @@ export function Lumera() {
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3 lg:grid-cols-5">
-            <ImagePlaceholder label="Google Sheets tracker (4:5)" aspect="portrait" />
-            <ImagePlaceholder label="Zapier success (4:5)" aspect="portrait" />
-            <ImagePlaceholder label="Trello board (4:5)" aspect="portrait" />
-            <ImagePlaceholder label="Asana project (4:5)" aspect="portrait" />
-            <ImagePlaceholder label="Weekly report (4:5)" aspect="portrait" />
+            <img src={opsSheets} alt="Google Sheets tracker" className="aspect-[16/9] w-full object-cover" />
+            <img src={opsZapier} alt="Zapier success" className="aspect-[16/9] w-full object-cover" />
+            <img src={opsTrello} alt="Trello board" className="aspect-[16/9] w-full object-cover" />
+            <img src={opsAsana} alt="Asana project" className="aspect-[16/9] w-full object-cover" />
+            <img src={opsWeekly} alt="Weekly report" className="aspect-[16/9] w-full object-cover" />
           </div>
         </div>
       </div>
