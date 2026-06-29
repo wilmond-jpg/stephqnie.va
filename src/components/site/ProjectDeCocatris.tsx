@@ -1,7 +1,10 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 import { StatBlock } from "./StatBlock";
+import banner from "@/assets/projects/de-cocatris/banner.jpg";
+import logo from "@/assets/projects/de-cocatris/logo.jpg";
+import bloodlines from "@/assets/projects/de-cocatris/bloodlines.png";
+import facebookResults from "@/assets/projects/de-cocatris/facebook-results.jpg";
 
 export function ProjectDeCocatris() {
   return (
@@ -14,12 +17,24 @@ export function ProjectDeCocatris() {
 
         <div className="mt-10 grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="grid gap-6">
-            <ImagePlaceholder label="De Cocatris banner (16:9)" aspect="landscape" />
+            <img
+              src={banner}
+              alt="De Cocatris banner"
+              className="aspect-[16/9] w-full object-cover"
+            />
             <div className="grid grid-cols-2 gap-6">
-              <ImagePlaceholder label="Gamefarm logo (1:1)" aspect="square" />
-              <ImagePlaceholder label="Bloodlines reference (1:1)" aspect="square" />
+              <img src={logo} alt="Gamefarm logo" className="aspect-square w-full object-cover" />
+              <img
+                src={bloodlines}
+                alt="Bloodlines reference"
+                className="aspect-square w-full object-cover"
+              />
             </div>
-            <ImagePlaceholder label="Facebook results screenshot (16:9)" aspect="landscape" />
+            <img
+              src={facebookResults}
+              alt="Facebook results screenshot"
+              className="aspect-[4/5] w-full object-cover"
+            />
           </div>
 
           <div>
