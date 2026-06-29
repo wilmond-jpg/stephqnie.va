@@ -38,7 +38,7 @@ export function ProjectTheVillage() {
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-6 lg:grid-cols-4">
-          <Reveal className="w-full bg-card-warm">
+          <Reveal className="w-full">
             <img
               src={logo}
               alt="Neon logo"
@@ -46,15 +46,7 @@ export function ProjectTheVillage() {
               loading="lazy"
             />
           </Reveal>
-          <Reveal className="w-full bg-card-warm">
-            <img
-              src={openHours}
-              alt="Open hours graphic"
-              className="w-full h-auto object-contain"
-              loading="lazy"
-            />
-          </Reveal>
-          <Reveal className="w-full bg-card-warm">
+          <Reveal className="w-full">
             <img
               src={menu}
               alt="Menu design"
@@ -62,7 +54,15 @@ export function ProjectTheVillage() {
               loading="lazy"
             />
           </Reveal>
-          <Reveal className="w-full bg-card-warm">
+          <Reveal className="w-full">
+            <img
+              src={openHours}
+              alt="Open hours graphic"
+              className="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          </Reveal>
+          <Reveal className="w-full">
             <img
               src={eventPoster}
               alt="Event poster"
@@ -72,11 +72,11 @@ export function ProjectTheVillage() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-6 w-full bg-card-warm">
+        <Reveal className="mt-6 w-full">
           <img
             src={testimonial}
             alt="Testimonial graphic"
-            className="w-full h-auto object-contain"
+            className="w-full h-auto object-contain max-h-[350px]"
             loading="lazy"
           />
         </Reveal>
