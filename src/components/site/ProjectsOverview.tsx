@@ -16,6 +16,7 @@ const projects = [
     s: "An Instagram ambassador program built from cold outreach to 908 onboarded creators.",
     href: "#la-venne",
     img: laVenneImg,
+    aspect: "portrait",
   },
   {
     n: "02",
@@ -24,6 +25,7 @@ const projects = [
     s: "A product-based brand managed end-to-end from visual identity to post-purchase materials.",
     href: "#aura",
     img: auraCrystalsImg,
+    aspect: "portrait",
   },
   {
     n: "03",
@@ -32,6 +34,7 @@ const projects = [
     s: "A skincare brand concept that grew into a fully working VA operations system.",
     href: "#lumera",
     img: lumeraImg,
+    aspect: "portrait",
   },
   {
     n: "04",
@@ -40,6 +43,7 @@ const projects = [
     s: "Two brands, one client — gamefowl breeding and a resto-events venue run in parallel.",
     href: "#de-cocatris",
     img: deCocatrisImg,
+    aspect: "square",
   },
   {
     n: "05",
@@ -48,8 +52,14 @@ const projects = [
     s: "A full resto-bar identity built from blank slate — logo, menus, and weekly events.",
     href: "#the-village",
     img: theVillageImg,
+    aspect: "square",
   },
 ];
+
+const aspectClass: Record<string, string> = {
+  portrait: "aspect-[4/5]",
+  square: "aspect-square",
+};
 
 function ProjectCard({ p }: { p: (typeof projects)[number] }) {
   return (
@@ -58,7 +68,7 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
       key={p.name}
       className="group flex flex-col gap-5 border border-gold/15 bg-soft-black/40 p-6 transition-all hover:-translate-y-1 hover:border-gold/40"
     >
-      <Reveal className="aspect-[4/5] w-full">
+      <Reveal className={`${aspectClass[p.aspect]} w-full`}>
         <img
           src={p.img}
           alt={`${p.name} cover`}
