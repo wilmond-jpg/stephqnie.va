@@ -1,7 +1,11 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 import { ArrowRight } from "lucide-react";
+import laVenneImg from "@/assets/projects/la-venne.jpg";
+import deCocatrisImg from "@/assets/projects/de-cocatris.jpg";
+import theVillageImg from "@/assets/projects/the-village.png";
+import auraCrystalsImg from "@/assets/projects/aura-crystals.png";
+import lumeraImg from "@/assets/projects/lumera.png";
 
 const projects = [
   {
@@ -10,6 +14,7 @@ const projects = [
     cat: "Influencer Outreach & Brand Ambassador Coordination",
     s: "An Instagram ambassador program built from cold outreach to 908 onboarded creators.",
     href: "#la-venne",
+    img: laVenneImg,
   },
   {
     n: "02",
@@ -17,6 +22,7 @@ const projects = [
     cat: "Social Media Management & Brand Content",
     s: "Two brands, one client — gamefowl breeding and a resto-events venue run in parallel.",
     href: "#de-cocatris",
+    img: deCocatrisImg,
   },
   {
     n: "03",
@@ -24,6 +30,7 @@ const projects = [
     cat: "Brand Identity, Menus & Event Content",
     s: "A full resto-bar identity built from blank slate — logo, menus, and weekly events.",
     href: "#the-village",
+    img: theVillageImg,
   },
   {
     n: "04",
@@ -31,6 +38,7 @@ const projects = [
     cat: "Small Business Branding, Social Media & Customer Experience",
     s: "A product-based brand managed end-to-end from visual identity to post-purchase materials.",
     href: "#aura",
+    img: auraCrystalsImg,
   },
   {
     n: "05",
@@ -38,6 +46,7 @@ const projects = [
     cat: "Concept Project — Brand Design, Social Media & Operations System",
     s: "A skincare brand concept that grew into a fully working VA operations system.",
     href: "#lumera",
+    img: lumeraImg,
   },
 ];
 
@@ -64,10 +73,10 @@ export function ProjectsOverview() {
               key={p.name}
               className="group flex flex-col gap-5 border border-gold/15 bg-soft-black/40 p-6 transition-all hover:-translate-y-1 hover:border-gold/40"
             >
-              <ImagePlaceholder
-                label={`${p.name} cover (4:5)`}
-                aspect="portrait"
-                className="border-gold/30 bg-chocolate text-cream/60"
+              <img
+                src={p.img}
+                alt={`${p.name} cover`}
+                className="aspect-[4/5] w-full object-cover"
               />
               <div className="text-gold text-[0.7rem] tracking-[0.22em] uppercase">
                 {p.n} · {p.cat}

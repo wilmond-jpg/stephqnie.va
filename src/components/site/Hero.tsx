@@ -1,7 +1,7 @@
 import { SectionLabel } from "./SectionLabel";
-import { ImagePlaceholder } from "./ImagePlaceholder";
 import { PageNumber } from "./PageNumber";
 import { ArrowRight } from "lucide-react";
+import stephanieHero from "@/assets/hero/stephanie-hero.jpg";
 
 export function Hero() {
   return (
@@ -9,7 +9,7 @@ export function Hero() {
       id="top"
       className="relative bg-chocolate text-cream min-h-screen pt-32 pb-16 sm:pt-36"
     >
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16">
+      <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
         <div className="flex flex-col gap-8">
           <div className="flex items-center justify-between">
             <SectionLabel>Virtual Assistant Portfolio</SectionLabel>
@@ -47,9 +47,10 @@ export function Hero() {
         </div>
 
         <div className="flex flex-col gap-8">
-          <ImagePlaceholder
-            label="Stephanie portrait / hero photo (4:5)"
-            aspect="portrait"
+          <img
+            src={stephanieHero}
+            alt="Stephanie — Virtual Assistant"
+            className="aspect-[4/5] w-full object-cover"
           />
         </div>
       </div>
