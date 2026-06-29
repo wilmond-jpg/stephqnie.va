@@ -45,7 +45,7 @@ export function ProjectLaVenne() {
               <img
                 src={instagramPost}
                 alt="Instagram jewelry post screenshot"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                className="h-full w-full object-contain border border-gold/20 shadow-md shadow-black/20"
                 loading="lazy"
               />
             </Reveal>
@@ -54,7 +54,7 @@ export function ProjectLaVenne() {
                 <img
                   src={curatedFeed}
                   alt="Curated feed"
-                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                  className="h-full w-full object-contain border border-gold/20 shadow-md shadow-black/20"
                   loading="lazy"
                 />
               </Reveal>
@@ -62,7 +62,7 @@ export function ProjectLaVenne() {
                 <img
                   src={topPost}
                   alt="Top post"
-                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                  className="h-full w-full object-contain border border-gold/20 shadow-md shadow-black/20"
                   loading="lazy"
                 />
               </Reveal>
