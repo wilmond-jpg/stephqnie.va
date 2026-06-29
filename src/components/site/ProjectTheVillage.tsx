@@ -1,6 +1,10 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import logo from "@/assets/projects/the-village/logo.png";
+import openHours from "@/assets/projects/the-village/open-hours.jpg";
+import menu from "@/assets/projects/the-village/menu.jpg";
+import eventPoster from "@/assets/projects/the-village/event-poster.jpg";
+import testimonial from "@/assets/projects/the-village/testimonial.png";
 
 export function ProjectTheVillage() {
   return (
@@ -37,14 +41,14 @@ export function ProjectTheVillage() {
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <ImagePlaceholder label="Neon logo (1:1)" aspect="square" />
-            <ImagePlaceholder label="Open hours graphic (1:1)" aspect="square" />
-            <ImagePlaceholder label="Menu design (3:4)" aspect="menu" />
-            <ImagePlaceholder label="Event poster (3:4)" aspect="menu" />
-            <ImagePlaceholder
-              label="Testimonial graphic (1:1)"
-              aspect="square"
-              className="col-span-2"
+            <img src={logo} alt="Neon logo" className="aspect-square w-full object-cover" />
+            <img src={openHours} alt="Open hours graphic" className="aspect-square w-full object-cover" />
+            <img src={menu} alt="Menu design" className="aspect-[3/4] w-full object-cover" />
+            <img src={eventPoster} alt="Event poster" className="aspect-[3/4] w-full object-cover" />
+            <img
+              src={testimonial}
+              alt="Testimonial graphic"
+              className="col-span-2 aspect-square w-full object-cover"
             />
           </div>
         </div>
