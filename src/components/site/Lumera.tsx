@@ -137,9 +137,9 @@ export function Lumera() {
             <div className="font-display text-gold mb-8 text-sm tracking-[0.2em] uppercase">
               What I Did
             </div>
-            <div className="grid gap-px bg-gold/20 sm:grid-cols-2 lg:grid-cols-3">
-              {lumeraWhatIDid.map((m) => (
-                <div key={m.t} className="bg-chocolate p-8">
+            <div className="grid gap-px bg-gold/20 sm:grid-cols-2">
+              {lumeraWhatIDid.map((m, i) => (
+                <div key={m.t} className={`bg-chocolate p-8 ${i === 4 ? "sm:col-span-2" : ""}`}>
                   <h3 className="font-display text-cream text-xl">{m.t}</h3>
                   <p className="text-cream/75 mt-3 text-sm leading-relaxed">{m.d}</p>
                 </div>
