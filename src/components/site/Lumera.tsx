@@ -2,6 +2,7 @@ import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
 import { StatBlock } from "./StatBlock";
 import { ExternalLink } from "./ExternalLink";
+import { Reveal } from "./Reveal";
 import moodboard from "@/assets/projects/lumera/moodboard.png";
 import lumeraLogo from "@/assets/projects/lumera/logo.png";
 import productMockup from "@/assets/projects/lumera/product-mockup.png";
@@ -125,12 +126,14 @@ export function Lumera() {
                 operations system.
               </p>
             </div>
-            <img
-              src={moodboard}
-              alt="Lumera moodboard grid"
-              className="aspect-square w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
+            <Reveal className="aspect-square w-full">
+              <img
+                src={moodboard}
+                alt="Lumera moodboard grid"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
           </div>
 
           <div className="mt-16">
@@ -148,24 +151,30 @@ export function Lumera() {
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
-            <img
-              src={lumeraLogo}
-              alt="Lumera logo"
-              className="aspect-square w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={productMockup}
-              alt="Product mockup"
-              className="aspect-[4/5] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={productPhotography}
-              alt="Product photography"
-              className="aspect-[4/5] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
+            <Reveal className="aspect-square w-full">
+              <img
+                src={lumeraLogo}
+                alt="Lumera logo"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="aspect-[4/5] w-full">
+              <img
+                src={productMockup}
+                alt="Product mockup"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="aspect-[4/5] w-full">
+              <img
+                src={productPhotography}
+                alt="Product photography"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
           </div>
         </div>
       </div>
@@ -226,30 +235,38 @@ export function Lumera() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
-              <img
-                src={ghlWebsite}
-                alt="Website screenshot"
-                className="aspect-[4/5] w-full object-cover border border-gold/20"
-                loading="lazy"
-              />
-              <img
-                src={ghlForm}
-                alt="Form screenshot"
-                className="aspect-[4/5] w-full object-cover border border-gold/20"
-                loading="lazy"
-              />
-              <img
-                src={ghlBooking}
-                alt="Booking calendar"
-                className="aspect-[4/5] w-full object-cover border border-gold/20"
-                loading="lazy"
-              />
-              <img
-                src={ghlProductPage}
-                alt="Product page"
-                className="aspect-[4/5] w-full object-cover border border-gold/20"
-                loading="lazy"
-              />
+              <Reveal className="aspect-[4/5] w-full">
+                <img
+                  src={ghlWebsite}
+                  alt="Website screenshot"
+                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                  loading="lazy"
+                />
+              </Reveal>
+              <Reveal className="aspect-[4/5] w-full">
+                <img
+                  src={ghlForm}
+                  alt="Form screenshot"
+                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                  loading="lazy"
+                />
+              </Reveal>
+              <Reveal className="aspect-[4/5] w-full">
+                <img
+                  src={ghlBooking}
+                  alt="Booking calendar"
+                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                  loading="lazy"
+                />
+              </Reveal>
+              <Reveal className="aspect-[4/5] w-full">
+                <img
+                  src={ghlProductPage}
+                  alt="Product page"
+                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                  loading="lazy"
+                />
+              </Reveal>
             </div>
           </div>
 
@@ -310,36 +327,46 @@ export function Lumera() {
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3 lg:grid-cols-5">
-            <img
-              src={opsSheets}
-              alt="Google Sheets tracker"
-              className="aspect-[16/9] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={opsZapier}
-              alt="Zapier success"
-              className="aspect-[16/9] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={opsTrello}
-              alt="Trello board"
-              className="aspect-[16/9] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={opsAsana}
-              alt="Asana project"
-              className="aspect-[16/9] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={opsWeekly}
-              alt="Weekly report"
-              className="aspect-[16/9] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
+            <Reveal className="aspect-[16/9] w-full">
+              <img
+                src={opsSheets}
+                alt="Google Sheets tracker"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="aspect-[16/9] w-full">
+              <img
+                src={opsZapier}
+                alt="Zapier success"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="aspect-[16/9] w-full">
+              <img
+                src={opsTrello}
+                alt="Trello board"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="aspect-[16/9] w-full">
+              <img
+                src={opsAsana}
+                alt="Asana project"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="aspect-[16/9] w-full">
+              <img
+                src={opsWeekly}
+                alt="Weekly report"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
           </div>
         </div>
       </div>

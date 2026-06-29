@@ -1,6 +1,7 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
 import { StatBlock } from "./StatBlock";
+import { Reveal } from "./Reveal";
 import banner from "@/assets/projects/de-cocatris/banner.jpg";
 import logo from "@/assets/projects/de-cocatris/logo.jpg";
 import bloodlines from "@/assets/projects/de-cocatris/bloodlines.png";
@@ -17,32 +18,40 @@ export function ProjectDeCocatris() {
 
         <div className="mt-10 grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="grid gap-6">
-            <img
-              src={banner}
-              alt="De Cocatris banner"
-              className="aspect-[16/9] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
+            <Reveal className="aspect-[16/9] w-full">
+              <img
+                src={banner}
+                alt="De Cocatris banner"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
             <div className="grid grid-cols-2 gap-6">
-              <img
-                src={logo}
-                alt="Gamefarm logo"
-                className="aspect-square w-full object-cover border border-gold/20"
-                loading="lazy"
-              />
-              <img
-                src={bloodlines}
-                alt="Bloodlines reference"
-                className="aspect-square w-full object-cover border border-gold/20"
-                loading="lazy"
-              />
+              <Reveal className="aspect-square w-full">
+                <img
+                  src={logo}
+                  alt="Gamefarm logo"
+                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                  loading="lazy"
+                />
+              </Reveal>
+              <Reveal className="aspect-square w-full">
+                <img
+                  src={bloodlines}
+                  alt="Bloodlines reference"
+                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                  loading="lazy"
+                />
+              </Reveal>
             </div>
-            <img
-              src={facebookResults}
-              alt="Facebook results screenshot"
-              className="aspect-square w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
+            <Reveal className="aspect-square w-full">
+              <img
+                src={facebookResults}
+                alt="Facebook results screenshot"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
           </div>
 
           <div>

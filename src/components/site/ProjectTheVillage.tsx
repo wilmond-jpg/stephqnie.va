@@ -1,5 +1,6 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
+import { Reveal } from "./Reveal";
 import logo from "@/assets/projects/the-village/logo.png";
 import openHours from "@/assets/projects/the-village/open-hours.jpg";
 import menu from "@/assets/projects/the-village/menu.jpg";
@@ -38,36 +39,46 @@ export function ProjectTheVillage() {
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <img
-              src={logo}
-              alt="Neon logo"
-              className="aspect-square w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={openHours}
-              alt="Open hours graphic"
-              className="aspect-square w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={menu}
-              alt="Menu design"
-              className="aspect-[3/4] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={eventPoster}
-              alt="Event poster"
-              className="aspect-[3/4] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={testimonial}
-              alt="Testimonial graphic"
-              className="col-span-2 aspect-square w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
+            <Reveal className="aspect-square w-full">
+              <img
+                src={logo}
+                alt="Neon logo"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="aspect-square w-full">
+              <img
+                src={openHours}
+                alt="Open hours graphic"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="aspect-[3/4] w-full">
+              <img
+                src={menu}
+                alt="Menu design"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="aspect-[3/4] w-full">
+              <img
+                src={eventPoster}
+                alt="Event poster"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="col-span-2 aspect-square w-full">
+              <img
+                src={testimonial}
+                alt="Testimonial graphic"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                loading="lazy"
+              />
+            </Reveal>
           </div>
         </div>
       </div>

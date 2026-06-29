@@ -1,5 +1,6 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
+import { Reveal } from "./Reveal";
 import logo from "@/assets/projects/aura-crystals/logo.png";
 import careGuide from "@/assets/projects/aura-crystals/care-guide.jpg";
 import thankYouCard from "@/assets/projects/aura-crystals/thank-you-card.png";
@@ -51,18 +52,22 @@ export function ProjectAuraCrystals() {
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <img
-              src={logo}
-              alt="Aura logo"
-              className="aspect-square w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
-            <img
-              src={careGuide}
-              alt="Care guide"
-              className="aspect-[3/4] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
+            <Reveal className="aspect-square w-full">
+              <img
+                src={logo}
+                alt="Aura logo"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="aspect-[3/4] w-full">
+              <img
+                src={careGuide}
+                alt="Care guide"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                loading="lazy"
+              />
+            </Reveal>
           </div>
         </div>
 
@@ -81,24 +86,30 @@ export function ProjectAuraCrystals() {
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
-          <img
-            src={thankYouCard}
-            alt="Thank-you card"
-            className="aspect-square w-full object-cover border border-gold/20"
-            loading="lazy"
-          />
-          <img
-            src={instagramProfile}
-            alt="Instagram profile"
-            className="aspect-[4/5] w-full object-cover border border-gold/20"
-            loading="lazy"
-          />
-          <img
-            src={purchaseInsert}
-            alt="Purchase insert"
-            className="aspect-[4/5] w-full object-cover border border-gold/20"
-            loading="lazy"
-          />
+          <Reveal className="aspect-square w-full">
+            <img
+              src={thankYouCard}
+              alt="Thank-you card"
+              className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+              loading="lazy"
+            />
+          </Reveal>
+          <Reveal className="aspect-[4/5] w-full">
+            <img
+              src={instagramProfile}
+              alt="Instagram profile"
+              className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+              loading="lazy"
+            />
+          </Reveal>
+          <Reveal className="aspect-[4/5] w-full">
+            <img
+              src={purchaseInsert}
+              alt="Purchase insert"
+              className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+              loading="lazy"
+            />
+          </Reveal>
         </div>
       </div>
     </section>

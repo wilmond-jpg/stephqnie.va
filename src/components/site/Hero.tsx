@@ -2,6 +2,7 @@ import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
 import { ArrowRight } from "lucide-react";
 import stephanieHero from "@/assets/hero/stephanie-hero.jpg";
+import { Reveal } from "./Reveal";
 
 export function Hero() {
   return (
@@ -47,12 +48,14 @@ export function Hero() {
         </div>
 
         <div className="flex flex-col gap-8">
-          <img
-            src={stephanieHero}
-            alt="Stephanie — Virtual Assistant"
-            className="aspect-[4/5] w-full object-cover border border-gold/20"
-            loading="lazy"
-          />
+          <Reveal className="aspect-[4/5] w-full">
+            <img
+              src={stephanieHero}
+              alt="Stephanie — Virtual Assistant"
+              className="h-full w-full object-cover object-[50%_30%] border border-gold/20 shadow-md shadow-black/60 brightness-110"
+              loading="eager"
+            />
+          </Reveal>
         </div>
       </div>
 

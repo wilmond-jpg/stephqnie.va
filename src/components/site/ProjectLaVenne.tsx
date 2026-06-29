@@ -1,6 +1,7 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
 import { StatBlock } from "./StatBlock";
+import { Reveal } from "./Reveal";
 import instagramPost from "@/assets/projects/la-venne/instagram-post.jpg";
 import curatedFeed from "@/assets/projects/la-venne/curated-feed.jpg";
 import topPost from "@/assets/projects/la-venne/top-post.jpg";
@@ -40,25 +41,31 @@ export function ProjectLaVenne() {
           </div>
 
           <div className="grid gap-6">
-            <img
-              src={instagramPost}
-              alt="Instagram jewelry post screenshot"
-              className="aspect-[4/5] w-full object-cover border border-gold/20"
-              loading="lazy"
-            />
+            <Reveal className="aspect-[4/5] w-full">
+              <img
+                src={instagramPost}
+                alt="Instagram jewelry post screenshot"
+                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                loading="lazy"
+              />
+            </Reveal>
             <div className="grid grid-cols-2 gap-6">
-              <img
-                src={curatedFeed}
-                alt="Curated feed"
-                className="aspect-[4/5] w-full object-cover border border-gold/20"
-                loading="lazy"
-              />
-              <img
-                src={topPost}
-                alt="Top post"
-                className="aspect-[4/5] w-full object-cover border border-gold/20"
-                loading="lazy"
-              />
+              <Reveal className="aspect-[4/5] w-full">
+                <img
+                  src={curatedFeed}
+                  alt="Curated feed"
+                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                  loading="lazy"
+                />
+              </Reveal>
+              <Reveal className="aspect-[4/5] w-full">
+                <img
+                  src={topPost}
+                  alt="Top post"
+                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
+                  loading="lazy"
+                />
+              </Reveal>
             </div>
           </div>
         </div>

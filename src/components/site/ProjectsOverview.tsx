@@ -1,6 +1,7 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
 import { ArrowRight } from "lucide-react";
+import { Reveal } from "./Reveal";
 import laVenneImg from "@/assets/projects/la-venne.jpg";
 import deCocatrisImg from "@/assets/projects/de-cocatris.jpg";
 import theVillageImg from "@/assets/projects/the-village.png";
@@ -73,12 +74,14 @@ export function ProjectsOverview() {
               key={p.name}
               className="group flex flex-col gap-5 border border-gold/15 bg-soft-black/40 p-6 transition-all hover:-translate-y-1 hover:border-gold/40"
             >
-              <img
-                src={p.img}
-                alt={`${p.name} cover`}
-                className="aspect-[4/5] w-full object-cover border border-gold/20 transition-transform duration-500 group-hover:scale-[1.03]"
-                loading="lazy"
-              />
+              <Reveal className="aspect-[4/5] w-full">
+                <img
+                  src={p.img}
+                  alt={`${p.name} cover`}
+                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110 transition-transform duration-500 group-hover:scale-[1.03]"
+                  loading="lazy"
+                />
+              </Reveal>
               <div className="text-gold text-[0.7rem] tracking-[0.22em] uppercase">
                 {p.n} · {p.cat}
               </div>
