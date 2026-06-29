@@ -1,29 +1,57 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { WhatIDo } from "@/components/site/WhatIDo";
+import { Skills } from "@/components/site/Skills";
+import { ProjectsOverview } from "@/components/site/ProjectsOverview";
+import { ProjectLaVenne } from "@/components/site/ProjectLaVenne";
+import { ProjectDeCocatris } from "@/components/site/ProjectDeCocatris";
+import { ProjectTheVillage } from "@/components/site/ProjectTheVillage";
+import { ProjectAuraCrystals } from "@/components/site/ProjectAuraCrystals";
+import { Lumera } from "@/components/site/Lumera";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Stephanie Anne Corpuz — Virtual Assistant Portfolio" },
+      {
+        name: "description",
+        content:
+          "Content, calendars, and chaos — handled. Social media, systems, and operations support for small businesses across beauty, hospitality, and e-commerce.",
+      },
+      {
+        property: "og:title",
+        content: "Stephanie Anne Corpuz — Virtual Assistant Portfolio",
+      },
+      {
+        property: "og:description",
+        content:
+          "A warm editorial portfolio showcasing brand, content, CRM, and operations work by VA Stephanie Anne Corpuz.",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="bg-cream min-h-screen">
+      <Nav />
+      <main>
+        <Hero />
+        <WhatIDo />
+        <Skills />
+        <ProjectsOverview />
+        <ProjectLaVenne />
+        <ProjectDeCocatris />
+        <ProjectTheVillage />
+        <ProjectAuraCrystals />
+        <Lumera />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
