@@ -16,7 +16,7 @@ export function ProjectDeCocatris() {
           <PageNumber index={6} total={12} />
         </div>
 
-        <div className="mt-10 grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="mt-10 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div className="grid gap-6">
             <Reveal className="aspect-[16/9] w-full">
               <img
@@ -27,11 +27,11 @@ export function ProjectDeCocatris() {
               />
             </Reveal>
             <div className="grid grid-cols-2 gap-6">
-              <Reveal className="aspect-square w-full">
+              <Reveal className="aspect-square w-full bg-card-warm">
                 <img
                   src={logo}
                   alt="Gamefarm logo"
-                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                  className="h-full w-full object-scale-down"
                   loading="lazy"
                 />
               </Reveal>
@@ -48,7 +48,7 @@ export function ProjectDeCocatris() {
               <img
                 src={facebookResults}
                 alt="Facebook results screenshot"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                className="h-full w-full object-scale-down border border-gold/20 shadow-md shadow-black/60 brightness-110"
                 loading="lazy"
               />
             </Reveal>

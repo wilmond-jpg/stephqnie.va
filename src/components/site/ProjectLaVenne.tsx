@@ -40,29 +40,29 @@ export function ProjectLaVenne() {
             </ul>
           </div>
 
-          <div className="grid gap-6">
-            <Reveal className="w-full bg-card-warm">
+          <div className="grid grid-cols-2 gap-6 items-center">
+            <Reveal className="bg-card-warm">
               <img
                 src={instagramPost}
                 alt="Instagram jewelry post screenshot"
-                className="h-full w-full object-scale-down"
+                className="w-full h-auto object-contain"
                 loading="lazy"
               />
             </Reveal>
-            <div className="grid grid-cols-2 gap-6">
-              <Reveal className="aspect-[4/5] w-full bg-card-warm">
+            <div className="flex flex-col gap-6">
+              <Reveal className="bg-card-warm">
                 <img
                   src={curatedFeed}
                   alt="Curated feed"
-                  className="h-full w-full object-scale-down"
+                  className="w-full h-auto object-contain"
                   loading="lazy"
                 />
               </Reveal>
-              <Reveal className="aspect-[4/5] w-full bg-card-warm">
+              <Reveal className="bg-card-warm">
                 <img
                   src={topPost}
                   alt="Top post"
-                  className="h-full w-full object-scale-down"
+                  className="w-full h-auto object-contain"
                   loading="lazy"
                 />
               </Reveal>
