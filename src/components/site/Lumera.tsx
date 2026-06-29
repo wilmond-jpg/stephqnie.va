@@ -119,17 +119,17 @@ export function Lumera() {
                 Concept Project — Brand Design · Social Media · Operations System
               </p>
               <p className="text-cream/85 mt-8 max-w-xl leading-relaxed">
-                Lumera started as a creative brand concept I built from scratch
-                to show how I approach content, design, and brand identity
-                today — less noise, more intention. What began as a mock
-                skincare brand eventually evolved into a fully working VA
+                Lumera started as a creative brand concept I built from scratch to show how I
+                approach content, design, and brand identity today — less noise, more intention.
+                What began as a mock skincare brand eventually evolved into a fully working VA
                 operations system.
               </p>
             </div>
             <img
               src={moodboard}
               alt="Lumera moodboard grid"
-              className="aspect-square w-full object-cover"
+              className="aspect-square w-full object-cover border border-gold/20"
+              loading="lazy"
             />
           </div>
 
@@ -148,16 +148,23 @@ export function Lumera() {
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
-            <img src={lumeraLogo} alt="Lumera logo" className="aspect-square w-full object-cover" />
+            <img
+              src={lumeraLogo}
+              alt="Lumera logo"
+              className="aspect-square w-full object-cover border border-gold/20"
+              loading="lazy"
+            />
             <img
               src={productMockup}
               alt="Product mockup"
-              className="aspect-[4/5] w-full object-cover"
+              className="aspect-[4/5] w-full object-cover border border-gold/20"
+              loading="lazy"
             />
             <img
               src={productPhotography}
               alt="Product photography"
-              className="aspect-[4/5] w-full object-cover"
+              className="aspect-[4/5] w-full object-cover border border-gold/20"
+              loading="lazy"
             />
           </div>
         </div>
@@ -174,10 +181,9 @@ export function Lumera() {
             The end-to-end workflow.
           </h3>
           <p className="text-cream/75 mt-6 max-w-2xl leading-relaxed">
-            Lumera is a mock skincare consultation brand built as a complete VA
-            portfolio case study. This is the end-to-end workflow I designed,
-            built, and documented — from a live branded website to a fully
-            operational client-ready system.
+            Lumera is a mock skincare consultation brand built as a complete VA portfolio case
+            study. This is the end-to-end workflow I designed, built, and documented — from a live
+            branded website to a fully operational client-ready system.
           </p>
 
           <div className="mt-14 grid gap-px bg-gold/20 md:grid-cols-2 lg:grid-cols-4">
@@ -201,22 +207,16 @@ export function Lumera() {
           </div>
           <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_1fr]">
             <div>
-              <h3 className="font-display text-6xl leading-[0.95] sm:text-7xl">
-                GoHighLevel.
-              </h3>
+              <h3 className="font-display text-6xl leading-[0.95] sm:text-7xl">GoHighLevel.</h3>
               <p className="text-brown-deep/85 mt-8 max-w-xl leading-relaxed">
-                The GoHighLevel system was built from the ground up — a live
-                branded website, a working skin consultation form, and a real
-                booking calendar, all connected and tested. When a lead
-                submits the form, GHL automatically creates a contact, opens
-                an opportunity in the pipeline, and triggers the automation
-                workflows. Every part of this system is live, functional, and
-                proven with real data.
+                The GoHighLevel system was built from the ground up — a live branded website, a
+                working skin consultation form, and a real booking calendar, all connected and
+                tested. When a lead submits the form, GHL automatically creates a contact, opens an
+                opportunity in the pipeline, and triggers the automation workflows. Every part of
+                this system is live, functional, and proven with real data.
               </p>
               <div className="mt-8">
-                <div className="text-gold text-[0.7rem] tracking-[0.22em] uppercase">
-                  View Live
-                </div>
+                <div className="text-gold text-[0.7rem] tracking-[0.22em] uppercase">View Live</div>
                 <ExternalLink
                   href="https://lumera-website-nine.vercel.app"
                   className="font-display text-chocolate hover:text-gold mt-2 text-2xl"
@@ -226,10 +226,30 @@ export function Lumera() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
-              <img src={ghlWebsite} alt="Website screenshot" className="aspect-[4/5] w-full object-cover" />
-              <img src={ghlForm} alt="Form screenshot" className="aspect-[4/5] w-full object-cover" />
-              <img src={ghlBooking} alt="Booking calendar" className="aspect-[16/9] w-full object-cover" />
-              <img src={ghlProductPage} alt="Product page" className="aspect-[4/5] w-full object-cover" />
+              <img
+                src={ghlWebsite}
+                alt="Website screenshot"
+                className="aspect-[4/5] w-full object-cover border border-gold/20"
+                loading="lazy"
+              />
+              <img
+                src={ghlForm}
+                alt="Form screenshot"
+                className="aspect-[4/5] w-full object-cover border border-gold/20"
+                loading="lazy"
+              />
+              <img
+                src={ghlBooking}
+                alt="Booking calendar"
+                className="aspect-[4/5] w-full object-cover border border-gold/20"
+                loading="lazy"
+              />
+              <img
+                src={ghlProductPage}
+                alt="Product page"
+                className="aspect-[4/5] w-full object-cover border border-gold/20"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -239,29 +259,27 @@ export function Lumera() {
               <div className="flex flex-col gap-3">
                 <StatBlock value="1" label="Live Website" />
                 <p className="text-brown-deep/75 text-xs leading-relaxed">
-                  Built with Lovable.dev, customized using OpenCode, and
-                  deployed live on Vercel.
+                  Built with Lovable.dev, customized using OpenCode, and deployed live on Vercel.
                 </p>
               </div>
               <div className="flex flex-col gap-3">
                 <StatBlock value="8" label="Pipeline Stages" />
                 <p className="text-brown-deep/75 text-xs leading-relaxed">
-                  Booked → Confirmed → Attended → Routine → Customer → VIP →
-                  Inactive → No Show.
+                  Booked → Confirmed → Attended → Routine → Customer → VIP → Inactive → No Show.
                 </p>
               </div>
               <div className="flex flex-col gap-3">
                 <StatBlock value="10" label="Workflows Published" />
                 <p className="text-brown-deep/75 text-xs leading-relaxed">
-                  All live and tested with real contacts — intake, follow-ups,
-                  conversions, and Zapier data sync.
+                  All live and tested with real contacts — intake, follow-ups, conversions, and
+                  Zapier data sync.
                 </p>
               </div>
               <div className="flex flex-col gap-3">
                 <StatBlock value="15" label="Contacts Created" />
                 <p className="text-brown-deep/75 text-xs leading-relaxed">
-                  Real form submissions processed through the full consultation
-                  and booking flow from the live Lumera website.
+                  Real form submissions processed through the full consultation and booking flow
+                  from the live Lumera website.
                 </p>
               </div>
             </div>
@@ -277,10 +295,9 @@ export function Lumera() {
             Operations Layer.
           </h3>
           <p className="text-cream/80 mt-8 max-w-2xl leading-relaxed">
-            Once the GHL foundation was live, the operations layer was built to
-            connect data, manage tasks, and simulate real weekly VA work. Every
-            tool is connected, every task is documented, and every workflow
-            was tested with real data before being marked complete.
+            Once the GHL foundation was live, the operations layer was built to connect data, manage
+            tasks, and simulate real weekly VA work. Every tool is connected, every task is
+            documented, and every workflow was tested with real data before being marked complete.
           </p>
 
           <div className="mt-14 grid gap-px bg-gold/20 sm:grid-cols-2">
@@ -293,11 +310,36 @@ export function Lumera() {
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3 lg:grid-cols-5">
-            <img src={opsSheets} alt="Google Sheets tracker" className="aspect-[16/9] w-full object-cover" />
-            <img src={opsZapier} alt="Zapier success" className="aspect-[16/9] w-full object-cover" />
-            <img src={opsTrello} alt="Trello board" className="aspect-[16/9] w-full object-cover" />
-            <img src={opsAsana} alt="Asana project" className="aspect-[16/9] w-full object-cover" />
-            <img src={opsWeekly} alt="Weekly report" className="aspect-[16/9] w-full object-cover" />
+            <img
+              src={opsSheets}
+              alt="Google Sheets tracker"
+              className="aspect-[16/9] w-full object-cover border border-gold/20"
+              loading="lazy"
+            />
+            <img
+              src={opsZapier}
+              alt="Zapier success"
+              className="aspect-[16/9] w-full object-cover border border-gold/20"
+              loading="lazy"
+            />
+            <img
+              src={opsTrello}
+              alt="Trello board"
+              className="aspect-[16/9] w-full object-cover border border-gold/20"
+              loading="lazy"
+            />
+            <img
+              src={opsAsana}
+              alt="Asana project"
+              className="aspect-[16/9] w-full object-cover border border-gold/20"
+              loading="lazy"
+            />
+            <img
+              src={opsWeekly}
+              alt="Weekly report"
+              className="aspect-[16/9] w-full object-cover border border-gold/20"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -313,10 +355,9 @@ export function Lumera() {
             Results.
           </h3>
           <p className="text-cream/80 mt-8 max-w-2xl leading-relaxed">
-            This project was built independently to show hiring clients what a
-            VA can build, manage, and hand over — without being told what to do
-            at every step. What started as a practice brand became a fully
-            operational system — proof that the right VA doesn't just complete
+            This project was built independently to show hiring clients what a VA can build, manage,
+            and hand over — without being told what to do at every step. What started as a practice
+            brand became a fully operational system — proof that the right VA doesn't just complete
             tasks, but builds the structure that makes everything run smoothly.
           </p>
 

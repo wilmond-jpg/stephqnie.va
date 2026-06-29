@@ -25,12 +25,8 @@ export function ImagePlaceholder({
     >
       <ImageIcon className="h-6 w-6 opacity-50" strokeWidth={1.25} />
       <div className="max-w-[80%]">
-        <div className="text-[0.65rem] tracking-[0.22em] uppercase opacity-70">
-          Replace
-        </div>
-        <div className="font-display mt-1 text-sm leading-snug sm:text-base">
-          {label}
-        </div>
+        <div className="text-[0.65rem] tracking-[0.22em] uppercase opacity-70">Replace</div>
+        <div className="font-display mt-1 text-sm leading-snug sm:text-base">{label}</div>
       </div>
     </div>
   );

@@ -16,18 +16,14 @@ export function ProjectLaVenne() {
 
         <div className="mt-10 grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <h2 className="font-display text-6xl leading-[0.95] sm:text-7xl">
-              La Venné.
-            </h2>
+            <h2 className="font-display text-6xl leading-[0.95] sm:text-7xl">La Venné.</h2>
             <p className="text-gold mt-6 text-sm tracking-[0.18em] uppercase">
               Influencer Outreach & Brand Ambassador Coordinator · Sep 2018 – Nov 2019
             </p>
             <p className="text-brown-deep/85 mt-8 max-w-xl leading-relaxed">
-              I ran the Instagram ambassador program for La Venné, an
-              e-commerce jewelry brand, from cold outreach through onboarding
-              to ongoing content. I personally recruited 908 ambassadors and
-              curated and edited their content to keep the feed visually
-              cohesive.
+              I ran the Instagram ambassador program for La Venné, an e-commerce jewelry brand, from
+              cold outreach through onboarding to ongoing content. I personally recruited 908
+              ambassadors and curated and edited their content to keep the feed visually cohesive.
             </p>
             <ul className="mt-8 flex max-w-xl flex-col">
               {[
@@ -47,18 +43,21 @@ export function ProjectLaVenne() {
             <img
               src={instagramPost}
               alt="Instagram jewelry post screenshot"
-              className="aspect-[4/5] w-full object-cover"
+              className="aspect-[4/5] w-full object-cover border border-gold/20"
+              loading="lazy"
             />
             <div className="grid grid-cols-2 gap-6">
               <img
                 src={curatedFeed}
                 alt="Curated feed"
-                className="aspect-[4/5] w-full object-cover"
+                className="aspect-[4/5] w-full object-cover border border-gold/20"
+                loading="lazy"
               />
               <img
                 src={topPost}
                 alt="Top post"
-                className="aspect-[4/5] w-full object-cover"
+                className="aspect-[4/5] w-full object-cover border border-gold/20"
+                loading="lazy"
               />
             </div>
           </div>

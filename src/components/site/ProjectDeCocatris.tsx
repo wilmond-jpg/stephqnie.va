@@ -20,20 +20,28 @@ export function ProjectDeCocatris() {
             <img
               src={banner}
               alt="De Cocatris banner"
-              className="aspect-[16/9] w-full object-cover"
+              className="aspect-[16/9] w-full object-cover border border-gold/20"
+              loading="lazy"
             />
             <div className="grid grid-cols-2 gap-6">
-              <img src={logo} alt="Gamefarm logo" className="aspect-square w-full object-cover" />
+              <img
+                src={logo}
+                alt="Gamefarm logo"
+                className="aspect-square w-full object-cover border border-gold/20"
+                loading="lazy"
+              />
               <img
                 src={bloodlines}
                 alt="Bloodlines reference"
-                className="aspect-square w-full object-cover"
+                className="aspect-square w-full object-cover border border-gold/20"
+                loading="lazy"
               />
             </div>
             <img
               src={facebookResults}
               alt="Facebook results screenshot"
-              className="aspect-[4/5] w-full object-cover"
+              className="aspect-square w-full object-cover border border-gold/20"
+              loading="lazy"
             />
           </div>
 
@@ -42,10 +50,9 @@ export function ProjectDeCocatris() {
               De Cocatris Gamefarm.
             </h2>
             <p className="text-cream/85 mt-8 max-w-xl leading-relaxed">
-              I managed two completely different brands for the same client at
-              the same time — a gamefowl breeding business and a restaurant and
-              events venue. Same owner, two audiences, two visual identities,
-              run in parallel without either one slipping.
+              I managed two completely different brands for the same client at the same time — a
+              gamefowl breeding business and a restaurant and events venue. Same owner, two
+              audiences, two visual identities, run in parallel without either one slipping.
             </p>
             <ul className="mt-8 flex max-w-xl flex-col">
               {[

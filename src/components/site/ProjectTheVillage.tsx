@@ -17,14 +17,11 @@ export function ProjectTheVillage() {
 
         <div className="mt-10 grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <h2 className="font-display text-6xl leading-[0.95] sm:text-7xl">
-              The Village.
-            </h2>
+            <h2 className="font-display text-6xl leading-[0.95] sm:text-7xl">The Village.</h2>
             <p className="text-brown-deep/85 mt-8 max-w-xl leading-relaxed">
-              I built The Village's entire resto-bar identity from a blank
-              slate — including the logo, neon signage style, menus, and event
-              promos — then carried that same system across every piece of
-              weekly content.
+              I built The Village's entire resto-bar identity from a blank slate — including the
+              logo, neon signage style, menus, and event promos — then carried that same system
+              across every piece of weekly content.
             </p>
             <ul className="mt-8 flex max-w-xl flex-col">
               {[
@@ -41,14 +38,35 @@ export function ProjectTheVillage() {
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <img src={logo} alt="Neon logo" className="aspect-square w-full object-cover" />
-            <img src={openHours} alt="Open hours graphic" className="aspect-square w-full object-cover" />
-            <img src={menu} alt="Menu design" className="aspect-[3/4] w-full object-cover" />
-            <img src={eventPoster} alt="Event poster" className="aspect-[3/4] w-full object-cover" />
+            <img
+              src={logo}
+              alt="Neon logo"
+              className="aspect-square w-full object-cover border border-gold/20"
+              loading="lazy"
+            />
+            <img
+              src={openHours}
+              alt="Open hours graphic"
+              className="aspect-square w-full object-cover border border-gold/20"
+              loading="lazy"
+            />
+            <img
+              src={menu}
+              alt="Menu design"
+              className="aspect-[3/4] w-full object-cover border border-gold/20"
+              loading="lazy"
+            />
+            <img
+              src={eventPoster}
+              alt="Event poster"
+              className="aspect-[3/4] w-full object-cover border border-gold/20"
+              loading="lazy"
+            />
             <img
               src={testimonial}
               alt="Testimonial graphic"
-              className="col-span-2 aspect-square w-full object-cover"
+              className="col-span-2 aspect-square w-full object-cover border border-gold/20"
+              loading="lazy"
             />
           </div>
         </div>

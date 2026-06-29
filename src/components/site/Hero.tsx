@@ -25,8 +25,8 @@ export function Hero() {
           </p>
 
           <p className="text-cream/70 max-w-lg text-base leading-relaxed">
-            Social media, systems, and behind-the-scenes operations for small
-            businesses that need more than just a poster designed.
+            Social media, systems, and behind-the-scenes operations for small businesses that need
+            more than just a poster designed.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -50,7 +50,8 @@ export function Hero() {
           <img
             src={stephanieHero}
             alt="Stephanie — Virtual Assistant"
-            className="aspect-[4/5] w-full object-cover"
+            className="aspect-[4/5] w-full object-cover border border-gold/20"
+            loading="lazy"
           />
         </div>
       </div>
@@ -65,9 +66,7 @@ export function Hero() {
           ].map((d) => (
             <div key={d.l} className="flex flex-col gap-1">
               <div className="font-display text-cream text-2xl">{d.v}</div>
-              <div className="text-[0.7rem] tracking-[0.2em] uppercase text-gold">
-                {d.l}
-              </div>
+              <div className="text-[0.7rem] tracking-[0.2em] uppercase text-gold">{d.l}</div>
             </div>
           ))}
         </div>

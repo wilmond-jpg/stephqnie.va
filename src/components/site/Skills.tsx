@@ -58,10 +58,7 @@ export function Skills() {
             </div>
             <div className="flex flex-col">
               {skills.map((s) => (
-                <div
-                  key={s.t}
-                  className="border-t border-gold/30 py-7"
-                >
+                <div key={s.t} className="border-t border-gold/30 py-7">
                   <h3 className="font-display text-2xl">{s.t}</h3>
                   <p className="text-brown-deep/85 mt-3 leading-relaxed">{s.d}</p>
                 </div>
@@ -75,10 +72,7 @@ export function Skills() {
             </div>
             <div className="flex flex-col">
               {tools.map((s) => (
-                <div
-                  key={s.t}
-                  className="border-t border-gold/30 py-7"
-                >
+                <div key={s.t} className="border-t border-gold/30 py-7">
                   <h3 className="font-display text-2xl">{s.t}</h3>
                   <p className="text-brown-deep/85 mt-3 leading-relaxed">{s.d}</p>
                 </div>

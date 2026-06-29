@@ -62,8 +62,8 @@ export function ProjectsOverview() {
           Selected projects.
         </h2>
         <p className="text-cream/70 mt-6 max-w-xl text-base sm:text-lg">
-          A mix of real client work, small business experience, and concept
-          systems built to show both creative and operational support.
+          A mix of real client work, small business experience, and concept systems built to show
+          both creative and operational support.
         </p>
 
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -76,14 +76,13 @@ export function ProjectsOverview() {
               <img
                 src={p.img}
                 alt={`${p.name} cover`}
-                className="aspect-[4/5] w-full object-cover"
+                className="aspect-[4/5] w-full object-cover border border-gold/20 transition-transform duration-500 group-hover:scale-[1.03]"
+                loading="lazy"
               />
               <div className="text-gold text-[0.7rem] tracking-[0.22em] uppercase">
                 {p.n} · {p.cat}
               </div>
-              <h3 className="font-display text-cream text-2xl leading-tight">
-                {p.name}
-              </h3>
+              <h3 className="font-display text-cream text-2xl leading-tight">{p.name}</h3>
               <p className="text-cream/70 text-sm leading-relaxed">{p.s}</p>
               <div className="text-yellow-pale mt-auto inline-flex items-center gap-2 text-[0.75rem] tracking-[0.18em] uppercase">
                 View Project

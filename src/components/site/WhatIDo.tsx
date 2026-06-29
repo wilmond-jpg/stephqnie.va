@@ -18,15 +18,10 @@ export function WhatIDo() {
           <SectionLabel>What I Do</SectionLabel>
           <PageNumber index={2} total={12} />
         </div>
-        <h2 className="font-display mt-8 text-4xl leading-tight sm:text-5xl">
-          Services I offer.
-        </h2>
+        <h2 className="font-display mt-8 text-4xl leading-tight sm:text-5xl">Services I offer.</h2>
         <ul className="mt-10 flex flex-col">
           {services.map((s, i) => (
-            <li
-              key={s}
-              className="border-t border-gold/25 py-5 text-lg sm:text-xl"
-            >
+            <li key={s} className="border-t border-gold/25 py-5 text-lg sm:text-xl">
               <span className="text-gold mr-4 text-xs tracking-[0.2em]">
                 {String(i + 1).padStart(2, "0")}
               </span>
@@ -41,11 +36,10 @@ export function WhatIDo() {
           Psychology graduate turned virtual assistant.
         </h3>
         <p className="text-brown-deep/85 mt-8 max-w-xl text-base leading-relaxed sm:text-lg">
-          I've spent the last four years running social pages, building brand
-          identities, and managing inboxes and calendars for businesses across
-          beauty, hospitality, and e-commerce — and I've recently expanded
-          into CRM setup, workflow automation, and operations system building
-          using tools like GoHighLevel, Zapier, Trello, and Asana.
+          I've spent the last four years running social pages, building brand identities, and
+          managing inboxes and calendars for businesses across beauty, hospitality, and e-commerce —
+          and I've recently expanded into CRM setup, workflow automation, and operations system
+          building using tools like GoHighLevel, Zapier, Trello, and Asana.
         </p>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-3">

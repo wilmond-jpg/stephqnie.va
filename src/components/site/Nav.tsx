@@ -23,9 +23,7 @@ export function Nav() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all ${
-        scrolled
-          ? "bg-chocolate/85 backdrop-blur-md border-b border-gold/15"
-          : "bg-transparent"
+        scrolled ? "bg-chocolate/85 backdrop-blur-md border-b border-gold/15" : "bg-transparent"
       }`}
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:px-8">
@@ -61,11 +59,7 @@ export function Nav() {
         <div className="fixed inset-0 z-50 bg-chocolate md:hidden">
           <div className="flex items-center justify-between px-5 py-4">
             <span className="font-display text-cream">Stephanie Anne Corpuz</span>
-            <button
-              onClick={() => setOpen(false)}
-              aria-label="Close menu"
-              className="text-cream"
-            >
+            <button onClick={() => setOpen(false)} aria-label="Close menu" className="text-cream">
               <X className="h-6 w-6" />
             </button>
           </div>

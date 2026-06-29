@@ -4,9 +4,17 @@ import { Mail, Linkedin, Download } from "lucide-react";
 const rows = [
   { label: "Name", value: "Stephanie Anne Corpuz" },
   { label: "Role", value: "Virtual Assistant" },
-  { label: "Email", value: "corpuzstephanieanne.va@gmail.com", href: "mailto:corpuzstephanieanne.va@gmail.com" },
+  {
+    label: "Email",
+    value: "corpuzstephanieanne.va@gmail.com",
+    href: "mailto:corpuzstephanieanne.va@gmail.com",
+  },
   { label: "Phone", value: "+63 920 913 2219", href: "tel:+639209132219" },
-  { label: "LinkedIn", value: "CorpuzStephanieAnne", href: "https://www.linkedin.com/in/CorpuzStephanieAnne" },
+  {
+    label: "LinkedIn",
+    value: "CorpuzStephanieAnne",
+    href: "https://www.linkedin.com/in/CorpuzStephanieAnne",
+  },
   { label: "Website", value: "Coming soon" },
 ];
 
@@ -19,9 +27,7 @@ export function Contact() {
         <h2 className="font-display text-yellow-pale mt-8 max-w-4xl text-4xl leading-[1.05] sm:text-6xl lg:text-7xl">
           Looking for a VA who builds systems, not just to-do lists?
         </h2>
-        <p className="font-display text-cream/90 mt-8 text-3xl italic sm:text-4xl">
-          Let's talk.
-        </p>
+        <p className="font-display text-cream/90 mt-8 text-3xl italic sm:text-4xl">Let's talk.</p>
 
         <div className="mt-16 grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="flex flex-col">
@@ -30,9 +36,7 @@ export function Contact() {
                 key={r.label}
                 className="grid grid-cols-[7rem_1fr] items-baseline gap-4 border-t border-gold/25 py-5 sm:grid-cols-[9rem_1fr]"
               >
-                <div className="text-gold text-[0.7rem] tracking-[0.22em] uppercase">
-                  {r.label}
-                </div>
+                <div className="text-gold text-[0.7rem] tracking-[0.22em] uppercase">{r.label}</div>
                 {r.href ? (
                   <a
                     href={r.href}
@@ -43,9 +47,7 @@ export function Contact() {
                     {r.value}
                   </a>
                 ) : (
-                  <div className="font-display text-cream text-lg sm:text-xl">
-                    {r.value}
-                  </div>
+                  <div className="font-display text-cream text-lg sm:text-xl">{r.value}</div>
                 )}
               </div>
             ))}

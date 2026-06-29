@@ -87,8 +87,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Stephanie Anne Corpuz — Virtual Assistant Portfolio" },
       {
         property: "og:description",
-        content:
-          "A warm editorial portfolio showcasing brand, content, CRM, and operations work.",
+        content: "A warm editorial portfolio showcasing brand, content, CRM, and operations work.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

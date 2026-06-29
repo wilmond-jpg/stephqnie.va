@@ -1,6 +1,10 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import logo from "@/assets/projects/aura-crystals/logo.png";
+import careGuide from "@/assets/projects/aura-crystals/care-guide.jpg";
+import thankYouCard from "@/assets/projects/aura-crystals/thank-you-card.png";
+import instagramProfile from "@/assets/projects/aura-crystals/instagram-profile.png";
+import purchaseInsert from "@/assets/projects/aura-crystals/purchase-insert.png";
 
 const managed = [
   {
@@ -39,24 +43,25 @@ export function ProjectAuraCrystals() {
               Small Business Branding · Social Media · Customer Experience
             </p>
             <p className="text-cream/85 mt-8 max-w-xl leading-relaxed">
-              Aura Energy Crystals is my small product-based business where I
-              managed the brand's visual identity, social media content, and
-              customer-facing materials. I used TikTok, Instagram, and Facebook
-              to showcase crystal pieces, post reels, engage with potential
+              Aura Energy Crystals is my small product-based business where I managed the brand's
+              visual identity, social media content, and customer-facing materials. I used TikTok,
+              Instagram, and Facebook to showcase crystal pieces, post reels, engage with potential
               buyers, and support online sales.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <ImagePlaceholder
-              label="Aura logo (1:1)"
-              aspect="square"
-              className="bg-cream text-chocolate/70"
+            <img
+              src={logo}
+              alt="Aura logo"
+              className="aspect-square w-full object-cover border border-gold/20"
+              loading="lazy"
             />
-            <ImagePlaceholder
-              label="Care guide (3:4)"
-              aspect="menu"
-              className="bg-cream text-chocolate/70"
+            <img
+              src={careGuide}
+              alt="Care guide"
+              className="aspect-[3/4] w-full object-cover border border-gold/20"
+              loading="lazy"
             />
           </div>
         </div>
@@ -76,20 +81,23 @@ export function ProjectAuraCrystals() {
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
-          <ImagePlaceholder
-            label="Thank-you card (1:1)"
-            aspect="square"
-            className="bg-cream text-chocolate/70"
+          <img
+            src={thankYouCard}
+            alt="Thank-you card"
+            className="aspect-square w-full object-cover border border-gold/20"
+            loading="lazy"
           />
-          <ImagePlaceholder
-            label="Instagram profile (4:5)"
-            aspect="portrait"
-            className="bg-cream text-chocolate/70"
+          <img
+            src={instagramProfile}
+            alt="Instagram profile"
+            className="aspect-[4/5] w-full object-cover border border-gold/20"
+            loading="lazy"
           />
-          <ImagePlaceholder
-            label="Purchase insert (4:5)"
-            aspect="portrait"
-            className="bg-cream text-chocolate/70"
+          <img
+            src={purchaseInsert}
+            alt="Purchase insert"
+            className="aspect-[4/5] w-full object-cover border border-gold/20"
+            loading="lazy"
           />
         </div>
       </div>
