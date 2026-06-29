@@ -1,6 +1,7 @@
 import { SectionLabel } from "./SectionLabel";
 import { PageNumber } from "./PageNumber";
 import { Reveal } from "./Reveal";
+import { Marquee } from "./Marquee";
 import logo from "@/assets/projects/the-village/logo.png";
 import openHours from "@/assets/projects/the-village/open-hours.jpg";
 import menu from "@/assets/projects/the-village/menu.jpg";
@@ -37,20 +38,8 @@ export function ProjectTheVillage() {
           </ul>
         </div>
 
-        <Reveal className="mt-12 overflow-hidden marquee-mask" aria-hidden="true">
-          <div className="flex gap-8" style={{ animation: "marquee 35s linear infinite" }}>
-            {[logo, menu, openHours, eventPoster, testimonial].flatMap((src, i) =>
-              Array.from({ length: 2 }).map((_, j) => (
-                <img
-                  key={`${i}-${j}`}
-                  src={src}
-                  alt=""
-                  className="h-[250px] sm:h-[400px] w-auto object-scale-down flex-shrink-0 pointer-events-none select-none"
-                  loading="lazy"
-                />
-              )),
-            )}
-          </div>
+        <Reveal className="mt-12">
+          <Marquee images={[logo, menu, openHours, eventPoster, testimonial]} speed={10} />
         </Reveal>
       </div>
     </section>
