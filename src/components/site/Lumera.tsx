@@ -3,6 +3,10 @@ import { PageNumber } from "./PageNumber";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 import { StatBlock } from "./StatBlock";
 import { ExternalLink } from "./ExternalLink";
+import moodboard from "@/assets/projects/lumera/moodboard.png";
+import lumeraLogo from "@/assets/projects/lumera/logo.png";
+import productMockup from "@/assets/projects/lumera/product-mockup.png";
+import productPhotography from "@/assets/projects/lumera/product-photography.png";
 
 const lumeraWhatIDid = [
   {
@@ -114,10 +118,10 @@ export function Lumera() {
                 operations system.
               </p>
             </div>
-            <ImagePlaceholder
-              label="Lumera moodboard grid (1:1)"
-              aspect="square"
-              className="bg-cream text-chocolate/70"
+            <img
+              src={moodboard}
+              alt="Lumera moodboard grid"
+              className="aspect-square w-full object-cover"
             />
           </div>
 
@@ -136,20 +140,16 @@ export function Lumera() {
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
-            <ImagePlaceholder
-              label="Lumera logo (1:1)"
-              aspect="square"
-              className="bg-cream text-chocolate/70"
+            <img src={lumeraLogo} alt="Lumera logo" className="aspect-square w-full object-cover" />
+            <img
+              src={productMockup}
+              alt="Product mockup"
+              className="aspect-[4/5] w-full object-cover"
             />
-            <ImagePlaceholder
-              label="Product mockup (4:5)"
-              aspect="portrait"
-              className="bg-cream text-chocolate/70"
-            />
-            <ImagePlaceholder
-              label="Product photography (4:5)"
-              aspect="portrait"
-              className="bg-cream text-chocolate/70"
+            <img
+              src={productPhotography}
+              alt="Product photography"
+              className="aspect-[4/5] w-full object-cover"
             />
           </div>
         </div>
