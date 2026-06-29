@@ -7,6 +7,10 @@ import moodboard from "@/assets/projects/lumera/moodboard.png";
 import lumeraLogo from "@/assets/projects/lumera/logo.png";
 import productMockup from "@/assets/projects/lumera/product-mockup.png";
 import productPhotography from "@/assets/projects/lumera/product-photography.png";
+import ghlWebsite from "@/assets/projects/gohighlevel/website.png";
+import ghlForm from "@/assets/projects/gohighlevel/form.png";
+import ghlBooking from "@/assets/projects/gohighlevel/booking-calendar.png";
+import ghlProductPage from "@/assets/projects/gohighlevel/product-page.png";
 
 const lumeraWhatIDid = [
   {
@@ -218,10 +222,10 @@ export function Lumera() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
-              <ImagePlaceholder label="Website screenshot (4:5)" aspect="portrait" />
-              <ImagePlaceholder label="Form screenshot (4:5)" aspect="portrait" />
-              <ImagePlaceholder label="Booking calendar (4:5)" aspect="portrait" />
-              <ImagePlaceholder label="Product page (4:5)" aspect="portrait" />
+              <img src={ghlWebsite} alt="Website screenshot" className="aspect-[4/5] w-full object-cover" />
+              <img src={ghlForm} alt="Form screenshot" className="aspect-[4/5] w-full object-cover" />
+              <img src={ghlBooking} alt="Booking calendar" className="aspect-[16/9] w-full object-cover" />
+              <img src={ghlProductPage} alt="Product page" className="aspect-[4/5] w-full object-cover" />
             </div>
           </div>
 
