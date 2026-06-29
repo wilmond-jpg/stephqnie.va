@@ -41,7 +41,7 @@ export function ProjectLaVenne() {
           </div>
 
           <div className="grid gap-6">
-            <Reveal className="w-full bg-card-warm">
+            <Reveal className="aspect-[4/5] w-full bg-card-warm">
               <img
                 src={instagramPost}
                 alt="Instagram jewelry post screenshot"
