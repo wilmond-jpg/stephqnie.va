@@ -16,71 +16,70 @@ export function ProjectTheVillage() {
           <PageNumber index={7} total={12} />
         </div>
 
-        <div className="mt-10 grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <h2 className="font-display text-6xl leading-[0.95] sm:text-7xl">The Village.</h2>
-            <p className="text-brown-deep/85 mt-8 max-w-xl leading-relaxed">
-              I built The Village's entire resto-bar identity from a blank slate — including the
-              logo, neon signage style, menus, and event promos — then carried that same system
-              across every piece of weekly content.
-            </p>
-            <ul className="mt-8 flex max-w-xl flex-col">
-              {[
-                "Designed the neon logo and tropical skyline brand mark.",
-                "Built the happy hour and silog breakfast menus.",
-                "Created weekly event posters for TGIF, Saturday Night Live, and Solid Sundays.",
-                "Turned customer reviews into branded testimonial graphics.",
-              ].map((b) => (
-                <li key={b} className="border-t border-gold/30 py-4 text-sm sm:text-base">
-                  {b}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="grid grid-cols-2 gap-6">
-            <Reveal className="w-full bg-card-warm">
-              <img
-                src={logo}
-                alt="Neon logo"
-                className="w-full h-auto object-contain"
-                loading="lazy"
-              />
-            </Reveal>
-            <Reveal className="w-full bg-card-warm">
-              <img
-                src={openHours}
-                alt="Open hours graphic"
-                className="w-full h-auto object-contain"
-                loading="lazy"
-              />
-            </Reveal>
-            <Reveal className="w-full bg-card-warm">
-              <img
-                src={menu}
-                alt="Menu design"
-                className="w-full h-auto object-contain"
-                loading="lazy"
-              />
-            </Reveal>
-            <Reveal className="w-full bg-card-warm">
-              <img
-                src={eventPoster}
-                alt="Event poster"
-                className="w-full h-auto object-contain"
-                loading="lazy"
-              />
-            </Reveal>
-            <Reveal className="w-full bg-card-warm col-span-2">
-              <img
-                src={testimonial}
-                alt="Testimonial graphic"
-                className="w-full h-auto object-contain"
-                loading="lazy"
-              />
-            </Reveal>
-          </div>
+        <div className="mt-10 max-w-2xl">
+          <h2 className="font-display text-6xl leading-[0.95] sm:text-7xl">The Village.</h2>
+          <p className="text-brown-deep/85 mt-8 leading-relaxed">
+            I built The Village's entire resto-bar identity from a blank slate — including the logo,
+            neon signage style, menus, and event promos — then carried that same system across every
+            piece of weekly content.
+          </p>
+          <ul className="mt-8 flex flex-col">
+            {[
+              "Designed the neon logo and tropical skyline brand mark.",
+              "Built the happy hour and silog breakfast menus.",
+              "Created weekly event posters for TGIF, Saturday Night Live, and Solid Sundays.",
+              "Turned customer reviews into branded testimonial graphics.",
+            ].map((b) => (
+              <li key={b} className="border-t border-gold/30 py-4 text-sm sm:text-base">
+                {b}
+              </li>
+            ))}
+          </ul>
         </div>
+
+        <div className="mt-12 grid grid-cols-2 gap-6 lg:grid-cols-4">
+          <Reveal className="w-full bg-card-warm">
+            <img
+              src={logo}
+              alt="Neon logo"
+              className="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          </Reveal>
+          <Reveal className="w-full bg-card-warm">
+            <img
+              src={openHours}
+              alt="Open hours graphic"
+              className="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          </Reveal>
+          <Reveal className="w-full bg-card-warm">
+            <img
+              src={menu}
+              alt="Menu design"
+              className="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          </Reveal>
+          <Reveal className="w-full bg-card-warm">
+            <img
+              src={eventPoster}
+              alt="Event poster"
+              className="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          </Reveal>
+        </div>
+
+        <Reveal className="mt-6 w-full bg-card-warm">
+          <img
+            src={testimonial}
+            alt="Testimonial graphic"
+            className="w-full h-auto object-contain"
+            loading="lazy"
+          />
+        </Reveal>
       </div>
     </section>
   );
