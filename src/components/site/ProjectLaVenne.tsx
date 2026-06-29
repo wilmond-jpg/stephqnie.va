@@ -41,28 +41,28 @@ export function ProjectLaVenne() {
           </div>
 
           <div className="grid gap-6">
-            <Reveal className="aspect-[4/5] w-full">
+            <Reveal className="w-full bg-card-warm">
               <img
                 src={instagramPost}
                 alt="Instagram jewelry post screenshot"
-                className="h-full w-full object-contain border border-gold/20 shadow-md shadow-black/20"
+                className="h-full w-full object-scale-down"
                 loading="lazy"
               />
             </Reveal>
             <div className="grid grid-cols-2 gap-6">
-              <Reveal className="aspect-[4/5] w-full">
+              <Reveal className="aspect-[4/5] w-full bg-card-warm">
                 <img
                   src={curatedFeed}
                   alt="Curated feed"
-                  className="h-full w-full object-contain border border-gold/20 shadow-md shadow-black/20"
+                  className="h-full w-full object-scale-down"
                   loading="lazy"
                 />
               </Reveal>
-              <Reveal className="aspect-[4/5] w-full">
+              <Reveal className="aspect-[4/5] w-full bg-card-warm">
                 <img
                   src={topPost}
                   alt="Top post"
-                  className="h-full w-full object-contain border border-gold/20 shadow-md shadow-black/20"
+                  className="h-full w-full object-scale-down"
                   loading="lazy"
                 />
               </Reveal>
