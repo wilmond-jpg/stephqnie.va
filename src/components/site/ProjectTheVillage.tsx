@@ -37,48 +37,20 @@ export function ProjectTheVillage() {
           </ul>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-6 lg:grid-cols-4">
-          <Reveal className="w-full">
-            <img
-              src={logo}
-              alt="Neon logo"
-              className="w-full h-auto object-contain"
-              loading="lazy"
-            />
-          </Reveal>
-          <Reveal className="w-full">
-            <img
-              src={menu}
-              alt="Menu design"
-              className="w-full h-auto object-contain"
-              loading="lazy"
-            />
-          </Reveal>
-          <Reveal className="w-full">
-            <img
-              src={openHours}
-              alt="Open hours graphic"
-              className="w-full h-auto object-contain"
-              loading="lazy"
-            />
-          </Reveal>
-          <Reveal className="w-full">
-            <img
-              src={eventPoster}
-              alt="Event poster"
-              className="w-full h-auto object-contain"
-              loading="lazy"
-            />
-          </Reveal>
-        </div>
-
-        <Reveal className="mt-6 w-full">
-          <img
-            src={testimonial}
-            alt="Testimonial graphic"
-            className="w-full h-auto object-contain max-h-[350px]"
-            loading="lazy"
-          />
+        <Reveal className="mt-12 overflow-hidden marquee-mask" aria-hidden="true">
+          <div className="flex gap-8" style={{ animation: "marquee 35s linear infinite" }}>
+            {[logo, menu, openHours, eventPoster, testimonial].flatMap((src, i) =>
+              Array.from({ length: 2 }).map((_, j) => (
+                <img
+                  key={`${i}-${j}`}
+                  src={src}
+                  alt=""
+                  className="h-[250px] sm:h-[400px] w-auto object-scale-down flex-shrink-0 pointer-events-none select-none"
+                  loading="lazy"
+                />
+              )),
+            )}
+          </div>
         </Reveal>
       </div>
     </section>
