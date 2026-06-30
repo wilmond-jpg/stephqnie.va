@@ -50,11 +50,11 @@ export function ProjectAuraCrystals() {
             </p>
           </div>
 
-          <Reveal className="w-full bg-card-warm">
+          <Reveal className="w-full bg-card-warm transition-shadow duration-500 hover:shadow-lg hover:-translate-y-0.5">
             <img
               src={logo}
               alt="Aura logo"
-              className="aspect-square w-full object-cover"
+              className="aspect-square w-full object-cover transition-transform duration-500 hover:scale-[1.02]"
               loading="lazy"
             />
           </Reveal>
@@ -79,7 +79,7 @@ export function ProjectAuraCrystals() {
             <img
               src={careGuide}
               alt="Care guide"
-              className="w-full h-[350px] object-scale-down"
+              className="w-full h-[350px] object-scale-down transition-transform duration-500 hover:scale-[1.02]"
               loading="lazy"
             />
           </Reveal>
@@ -87,7 +87,7 @@ export function ProjectAuraCrystals() {
             <img
               src={instagramProfile}
               alt="Instagram profile"
-              className="w-full h-[350px] object-scale-down"
+              className="w-full h-[350px] object-scale-down transition-transform duration-500 hover:scale-[1.02]"
               loading="lazy"
             />
           </Reveal>
@@ -95,7 +95,7 @@ export function ProjectAuraCrystals() {
             <img
               src={img0117}
               alt="Aura crystal"
-              className="w-full h-[350px] object-scale-down"
+              className="w-full h-[350px] object-scale-down transition-transform duration-500 hover:scale-[1.02]"
               loading="lazy"
             />
           </Reveal>

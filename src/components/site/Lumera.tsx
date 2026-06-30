@@ -184,7 +184,7 @@ export function Lumera() {
               <img
                 src={moodboard}
                 alt="Lumera moodboard grid"
-                className="w-full h-auto object-scale-down"
+                className="w-full h-auto object-scale-down transition-transform duration-500 hover:scale-[1.02]"
                 loading="lazy"
               />
             </Reveal>
@@ -195,7 +195,7 @@ export function Lumera() {
               <img
                 src={productMockup}
                 alt="Product mockup"
-                className="w-full h-[350px] object-scale-down"
+                className="w-full h-[350px] object-scale-down transition-transform duration-500 hover:scale-[1.02]"
                 loading="lazy"
               />
             </Reveal>
@@ -203,7 +203,7 @@ export function Lumera() {
               <img
                 src={lumeraLogo}
                 alt="Lumera logo"
-                className="w-full h-[350px] object-scale-down"
+                className="w-full h-[350px] object-scale-down transition-transform duration-500 hover:scale-[1.02]"
                 loading="lazy"
               />
             </Reveal>
@@ -211,7 +211,7 @@ export function Lumera() {
               <img
                 src={productPhotography}
                 alt="Product photography"
-                className="w-full h-[350px] object-scale-down"
+                className="w-full h-[350px] object-scale-down transition-transform duration-500 hover:scale-[1.02]"
                 loading="lazy"
               />
             </Reveal>
@@ -280,7 +280,7 @@ export function Lumera() {
                   <img
                     src={ghlBooking}
                     alt="Booking calendar"
-                    className="w-full object-contain"
+                    className="w-full object-contain transition-transform duration-500 hover:scale-[1.02]"
                     loading="lazy"
                   />
                   <p className="text-brown-deep/60 text-[0.65rem] tracking-[0.15em] uppercase mt-0.5">
@@ -291,7 +291,7 @@ export function Lumera() {
                   <img
                     src={ghlProductPage}
                     alt="Workflows"
-                    className="w-full object-contain"
+                    className="w-full object-contain transition-transform duration-500 hover:scale-[1.02]"
                     loading="lazy"
                   />
                   <p className="text-brown-deep/60 text-[0.65rem] tracking-[0.15em] uppercase mt-0.5">
@@ -304,7 +304,7 @@ export function Lumera() {
                   <img
                     src={ghlForm}
                     alt="Consultation form"
-                    className="h-full w-full object-contain"
+                    className="h-full w-full object-contain transition-transform duration-500 hover:scale-[1.02]"
                     loading="lazy"
                   />
                 </div>
@@ -352,10 +352,7 @@ export function Lumera() {
       {/* Operations Layer */}
       <div className="bg-chocolate py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="flex items-center justify-between">
-            <SectionLabel>Lumera / Operations Layer</SectionLabel>
-            <PageNumber index={11} total={12} />
-          </div>
+          <SectionLabel>Lumera / Operations Layer</SectionLabel>
           <h3 className="font-display text-yellow-pale mt-6 max-w-3xl text-5xl leading-tight sm:text-7xl">
             Operations Layer.
           </h3>
@@ -401,7 +398,7 @@ export function Lumera() {
                           <img
                             src={s.images[0].src}
                             alt={s.images[0].alt}
-                            className="w-full max-h-80 object-contain rounded-xl"
+                            className="w-full max-h-80 object-contain rounded-xl transition-transform duration-500 hover:scale-[1.02]"
                             loading="lazy"
                           />
                           <p className="text-cream/50 text-[0.65rem] tracking-[0.15em] uppercase mt-2">

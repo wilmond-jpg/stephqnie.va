@@ -21,7 +21,7 @@ export function ImagePlaceholder({
 }) {
   return (
     <div
-      className={`placeholder-frame ${aspectClass[aspect]} flex flex-col items-center justify-center gap-3 rounded-sm p-6 text-center ${className}`}
+      className={`placeholder-frame placeholder-shimmer ${aspectClass[aspect]} flex flex-col items-center justify-center gap-3 rounded-sm p-6 text-center ${className}`}
     >
       <ImageIcon className="h-6 w-6 opacity-50" strokeWidth={1.25} />
       <div className="max-w-[80%]">

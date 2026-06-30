@@ -52,7 +52,7 @@ export function Hero() {
             <img
               src={stephanieHero}
               alt="Stephanie — Virtual Assistant"
-              className="h-full w-full object-cover object-[50%_30%] border border-gold/20 shadow-md shadow-black/60 brightness-110"
+              className="h-full w-full object-cover object-[50%_30%] border border-gold/20 shadow-md shadow-black/60 brightness-110 image-breathe"
               loading="eager"
             />
           </Reveal>

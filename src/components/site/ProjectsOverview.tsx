@@ -68,13 +68,16 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
       key={p.name}
       className="group flex flex-col gap-5 border border-gold/15 bg-soft-black/40 p-6 transition-all hover:-translate-y-1 hover:border-gold/40"
     >
-      <Reveal className={`${aspectClass[p.aspect]} w-full`}>
-        <img
-          src={p.img}
-          alt={`${p.name} cover`}
-          className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110 transition-transform duration-500 group-hover:scale-[1.03]"
-          loading="lazy"
-        />
+      <Reveal className={`${aspectClass[p.aspect]} w-full overflow-hidden`}>
+        <div className="relative h-full w-full">
+          <img
+            src={p.img}
+            alt={`${p.name} cover`}
+            className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110 transition-transform duration-500 group-hover:scale-[1.03]"
+            loading="lazy"
+          />
+          <div className="pointer-events-none absolute inset-0 bg-gold/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+        </div>
       </Reveal>
       <div className="text-gold text-[0.7rem] tracking-[0.22em] uppercase">
         {p.n} · {p.cat}

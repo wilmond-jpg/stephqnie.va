@@ -18,36 +18,36 @@ export function ProjectDeCocatris() {
 
         <div className="mt-10 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div className="flex flex-col gap-6">
-            <Reveal className="bg-card-warm">
+            <Reveal className="bg-card-warm transition-shadow duration-500 hover:shadow-lg hover:-translate-y-0.5">
               <img
                 src={banner}
                 alt="De Cocatris banner"
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.02]"
                 loading="lazy"
               />
             </Reveal>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 items-start">
-              <Reveal className="bg-card-warm">
+              <Reveal className="bg-card-warm transition-shadow duration-500 hover:shadow-lg hover:-translate-y-0.5">
                 <img
                   src={logo}
                   alt="Gamefarm logo"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.02]"
                   loading="lazy"
                 />
               </Reveal>
-              <Reveal className="bg-card-warm">
+              <Reveal className="bg-card-warm transition-shadow duration-500 hover:shadow-lg hover:-translate-y-0.5">
                 <img
                   src={bloodlines}
                   alt="Bloodlines reference"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.02]"
                   loading="lazy"
                 />
               </Reveal>
-              <Reveal className="bg-card-warm">
+              <Reveal className="bg-card-warm transition-shadow duration-500 hover:shadow-lg hover:-translate-y-0.5">
                 <img
                   src={facebookResults}
                   alt="Facebook results screenshot"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.02]"
                   loading="lazy"
                 />
               </Reveal>

@@ -41,28 +41,28 @@ export function ProjectLaVenne() {
           </div>
 
           <div className="grid grid-cols-2 gap-6 items-center">
-            <Reveal className="bg-card-warm">
+            <Reveal className="bg-card-warm transition-shadow duration-500 hover:shadow-lg hover:-translate-y-0.5">
               <img
                 src={instagramPost}
                 alt="Instagram jewelry post screenshot"
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.02]"
                 loading="lazy"
               />
             </Reveal>
             <div className="flex flex-col gap-6">
-              <Reveal className="bg-card-warm">
+              <Reveal className="bg-card-warm transition-shadow duration-500 hover:shadow-lg hover:-translate-y-0.5">
                 <img
                   src={curatedFeed}
                   alt="Curated feed"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.02]"
                   loading="lazy"
                 />
               </Reveal>
-              <Reveal className="bg-card-warm">
+              <Reveal className="bg-card-warm transition-shadow duration-500 hover:shadow-lg hover:-translate-y-0.5">
                 <img
                   src={topPost}
                   alt="Top post"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.02]"
                   loading="lazy"
                 />
               </Reveal>

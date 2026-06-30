@@ -13,6 +13,7 @@ export function Marquee({
   const copyWidthRef = useRef(0);
   const posRef = useRef(0);
   const rafRef = useRef<number>(0);
+  const speedFactorRef = useRef(1);
   const [ready, setReady] = useState(false);
 
   const allImages = [...images, ...images, ...images, ...images];
@@ -88,7 +89,7 @@ export function Marquee({
     function animate(time: number) {
       const dt = time - prevTime;
       prevTime = time;
-      posRef.current -= dt * pxPerMs;
+      posRef.current -= dt * pxPerMs * speedFactorRef.current;
       if (posRef.current <= -copyWidth) {
         posRef.current += copyWidth;
       }
@@ -104,14 +105,19 @@ export function Marquee({
   }, [ready, speed]);
 
   return (
-    <div className={`overflow-hidden marquee-mask ${className}`} aria-hidden="true">
+    <div
+      className={`overflow-hidden marquee-mask cursor-default ${className}`}
+      aria-hidden="true"
+      onMouseEnter={() => { speedFactorRef.current = 0.2; }}
+      onMouseLeave={() => { speedFactorRef.current = 1; }}
+    >
       <div ref={innerRef} className="flex">
         {allImages.map((src, i) => (
           <img
             key={i}
             src={src}
             alt=""
-            className="h-[250px] sm:h-[400px] w-auto object-scale-down flex-shrink-0 pointer-events-none select-none mr-8"
+            className="h-[250px] sm:h-[400px] w-auto object-scale-down flex-shrink-0 select-none mr-8"
             loading="eager"
           />
         ))}

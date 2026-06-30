@@ -152,3 +152,36 @@
     transparent 100%
   );
 }
+
+@keyframes image-breathe {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+
+@utility image-breathe {
+  animation: image-breathe 8s ease-out forwards;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@utility placeholder-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-card-warm) 25%,
+    var(--color-beige) 50%,
+    var(--color-card-warm) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
