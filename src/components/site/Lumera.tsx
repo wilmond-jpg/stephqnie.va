@@ -7,7 +7,6 @@ import moodboard from "@/assets/projects/lumera/moodboard.png";
 import lumeraLogo from "@/assets/projects/lumera/logo.png";
 import productMockup from "@/assets/projects/lumera/product-mockup.png";
 import productPhotography from "@/assets/projects/lumera/product-photography.png";
-import ghlWebsite from "@/assets/projects/gohighlevel/website.png";
 import ghlForm from "@/assets/projects/gohighlevel/form.png";
 import ghlBooking from "@/assets/projects/gohighlevel/booking-calendar.png";
 import ghlProductPage from "@/assets/projects/gohighlevel/product-page.png";
@@ -238,7 +237,7 @@ export function Lumera() {
       <div className="bg-cream text-chocolate py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="flex items-center justify-between">
-            <SectionLabel>Concept Projects / Lumera</SectionLabel>
+            <SectionLabel>Lumera / GoHighLevel</SectionLabel>
             <PageNumber index={11} total={12} />
           </div>
           <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_1fr]">
@@ -261,38 +260,43 @@ export function Lumera() {
                 </ExternalLink>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              <Reveal className="aspect-[4/5] w-full">
-                <img
-                  src={ghlWebsite}
-                  alt="Website screenshot"
-                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
-                  loading="lazy"
-                />
-              </Reveal>
-              <Reveal className="aspect-[4/5] w-full">
-                <img
-                  src={ghlForm}
-                  alt="Form screenshot"
-                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
-                  loading="lazy"
-                />
-              </Reveal>
-              <Reveal className="aspect-[4/5] w-full">
-                <img
-                  src={ghlBooking}
-                  alt="Booking calendar"
-                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
-                  loading="lazy"
-                />
-              </Reveal>
-              <Reveal className="aspect-[4/5] w-full">
-                <img
-                  src={ghlProductPage}
-                  alt="Product page"
-                  className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/20"
-                  loading="lazy"
-                />
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex flex-col gap-4">
+                <Reveal className="w-full">
+                  <img
+                    src={ghlBooking}
+                    alt="Booking calendar"
+                    className="w-full object-contain"
+                    loading="lazy"
+                  />
+                  <p className="text-brown-deep/60 text-[0.65rem] tracking-[0.15em] uppercase mt-0.5">
+                    Calendar
+                  </p>
+                </Reveal>
+                <Reveal className="w-full">
+                  <img
+                    src={ghlProductPage}
+                    alt="Workflows"
+                    className="w-full object-contain"
+                    loading="lazy"
+                  />
+                  <p className="text-brown-deep/60 text-[0.65rem] tracking-[0.15em] uppercase mt-0.5">
+                    Workflows
+                  </p>
+                </Reveal>
+              </div>
+              <Reveal className="flex flex-col h-full">
+                <div className="flex-1">
+                  <img
+                    src={ghlForm}
+                    alt="Consultation form"
+                    className="h-full w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="text-brown-deep/60 text-[0.65rem] tracking-[0.15em] uppercase mt-0.5">
+                  Consultation Form
+                </p>
               </Reveal>
             </div>
           </div>
