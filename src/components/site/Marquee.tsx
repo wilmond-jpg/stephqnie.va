@@ -55,6 +55,28 @@ export function Marquee({
   }, [images.length]);
 
   useEffect(() => {
+    const inner = innerRef.current;
+    if (!inner) return;
+
+    const ro = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const w = entry.target.scrollWidth;
+        if (w > 0) {
+          const newCopyWidth = w / 4;
+          const oldCopyWidth = copyWidthRef.current;
+          if (oldCopyWidth > 0 && Math.abs(newCopyWidth - oldCopyWidth) > 1) {
+            posRef.current = (posRef.current / oldCopyWidth) * newCopyWidth;
+            copyWidthRef.current = newCopyWidth;
+          }
+        }
+      }
+    });
+
+    ro.observe(inner);
+    return () => ro.disconnect();
+  }, []);
+
+  useEffect(() => {
     if (!ready) return;
 
     const copyWidth = copyWidthRef.current;
