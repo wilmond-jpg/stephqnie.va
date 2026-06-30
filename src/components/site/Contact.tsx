@@ -68,16 +68,15 @@ export function Contact() {
             >
               <Linkedin className="h-4 w-4" /> View LinkedIn
             </a>
-            {/* Drop the final file at public/portfolio.pdf to wire this download. */}
             <a
               href="/portfolio.pdf"
-              download
+              download="Corpuz_StephanieAnne_VAPortfolio.pdf"
               className="border-gold/60 text-cream hover:bg-gold/10 inline-flex items-center justify-center gap-3 border px-7 py-4 text-sm font-semibold tracking-[0.15em] uppercase transition-colors"
             >
               <Download className="h-4 w-4" /> Download Portfolio
             </a>
             <p className="text-cream/50 mt-2 max-w-xs text-xs leading-relaxed lg:text-right">
-              PDF will be available once the final portfolio file is added.
+              Click to download my portfolio PDF.
             </p>
           </div>
         </div>
