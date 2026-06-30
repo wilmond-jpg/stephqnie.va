@@ -365,36 +365,55 @@ export function Lumera() {
             documented, and every workflow was tested with real data before being marked complete.
           </p>
 
-          <div className="mt-14 flex flex-col gap-16">
-            {opsSteps.map((s) => (
-              <Reveal key={s.n}>
-                <div className="flex flex-col gap-6">
-                  <div>
-                    <div className="font-display text-gold text-sm tracking-[0.2em] uppercase">
-                      {s.n} / {s.heading.toUpperCase()}
-                    </div>
-                    <h4 className="font-display text-yellow-pale text-3xl mt-3">
-                      {s.heading}
-                    </h4>
-                    <p className="text-cream/75 mt-4 max-w-2xl leading-relaxed">
-                      {s.description}
-                    </p>
-                  </div>
+          <div className="relative mt-14">
+            <div
+              className="absolute left-4 lg:left-5 top-0 bottom-0 w-px bg-gold/30"
+              aria-hidden="true"
+            />
 
-                  <div className="bg-soft-black rounded-xl p-3 max-w-4xl mx-auto">
-                    <img
-                      src={s.images[0].src}
-                      alt={s.images[0].alt}
-                      className="w-full max-h-80 object-contain border border-gold/20 shadow-md shadow-black/60"
-                      loading="lazy"
-                    />
-                    <p className="text-cream/50 text-[0.65rem] tracking-[0.15em] uppercase mt-2">
-                      {s.images[0].caption}
-                    </p>
+            <div className="space-y-16 lg:space-y-20">
+              {opsSteps.map((s, i) => (
+                <Reveal key={s.n}>
+                  <div className="relative min-h-8 lg:min-h-10">
+                    <div className="absolute top-0 left-4 lg:left-5 -translate-x-1/2 size-8 lg:size-10 rounded-full border-2 border-gold bg-chocolate flex items-center justify-center z-10">
+                      <span className="font-display text-gold text-xs lg:text-sm">
+                        {s.n}
+                      </span>
+                    </div>
+
+                    <div className="pl-12 lg:pl-16">
+                      <div
+                        className={`flex flex-col lg:flex-row gap-8 lg:gap-12 ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
+                      >
+                        <div className="flex-1">
+                          <div className="font-display text-gold text-sm tracking-[0.2em] uppercase">
+                            {s.n} / {s.heading.toUpperCase()}
+                          </div>
+                          <h4 className="font-display text-yellow-pale text-3xl mt-3">
+                            {s.heading}
+                          </h4>
+                          <p className="text-cream/75 mt-4 leading-relaxed">
+                            {s.description}
+                          </p>
+                        </div>
+
+                        <div className="flex-1">
+                          <img
+                            src={s.images[0].src}
+                            alt={s.images[0].alt}
+                            className="w-full max-h-80 object-contain rounded-xl"
+                            loading="lazy"
+                          />
+                          <p className="text-cream/50 text-[0.65rem] tracking-[0.15em] uppercase mt-2">
+                            {s.images[0].caption}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </Reveal>
-            ))}
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </div>
