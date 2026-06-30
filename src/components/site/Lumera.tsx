@@ -103,7 +103,7 @@ const results = [
 
 export function Lumera() {
   return (
-    <section id="lumera" className="bg-chocolate text-cream">
+    <section id="lumera" className="bg-cream text-chocolate">
       {/* Band intro */}
       <div className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -111,67 +111,94 @@ export function Lumera() {
             <SectionLabel>Concept Projects / Lumera</SectionLabel>
             <PageNumber index={9} total={12} />
           </div>
-          <div className="mt-10 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+          <div className="mt-10 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>
-              <h2 className="font-display text-yellow-pale text-6xl leading-[0.95] sm:text-8xl">
-                Lumera.
-              </h2>
-              <p className="text-gold mt-6 text-sm tracking-[0.18em] uppercase">
-                Concept Project — Brand Design · Social Media · Operations System
-              </p>
-              <p className="text-cream/85 mt-8 max-w-xl leading-relaxed">
-                Lumera started as a creative brand concept I built from scratch to show how I
-                approach content, design, and brand identity today — less noise, more intention.
-                What began as a mock skincare brand eventually evolved into a fully working VA
-                operations system.
-              </p>
+              <div>
+                <h2 className="font-display text-chocolate text-6xl leading-[0.95] sm:text-8xl">
+                  Lumera.
+                </h2>
+                <p className="text-brown-deep mt-6 text-sm tracking-[0.18em] uppercase">
+                  Concept Project — Brand Design · Social Media · Operations System
+                </p>
+                <p className="text-brown-deep/85 mt-8 max-w-xl leading-relaxed">
+                  Lumera started as a creative brand concept I built from scratch to show how I
+                  approach content, design, and brand identity today — less noise, more intention.
+                  What began as a mock skincare brand eventually evolved into a fully working VA
+                  operations system.
+                </p>
+              </div>
+
+              <div className="mt-16">
+                <div className="font-display text-brown-deep mb-8 text-sm tracking-[0.2em] uppercase">
+                  What I Did
+                </div>
+                <div className="divide-y divide-gold/30">
+                  <div className="grid grid-cols-2 gap-6 py-4">
+                    {[0, 1].map((i) => (
+                      <div key={lumeraWhatIDid[i].t}>
+                        <h3 className="font-display text-chocolate text-xl">
+                          {lumeraWhatIDid[i].t}
+                        </h3>
+                        <p className="text-brown-deep/85 mt-1 text-sm leading-relaxed">
+                          {lumeraWhatIDid[i].d}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="grid grid-cols-2 gap-6 py-4">
+                    {[2, 3].map((i) => (
+                      <div key={lumeraWhatIDid[i].t}>
+                        <h3 className="font-display text-chocolate text-xl">
+                          {lumeraWhatIDid[i].t}
+                        </h3>
+                        <p className="text-brown-deep/85 mt-1 text-sm leading-relaxed">
+                          {lumeraWhatIDid[i].d}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="py-4">
+                    <h3 className="font-display text-chocolate text-xl">{lumeraWhatIDid[4].t}</h3>
+                    <p className="text-brown-deep/85 mt-1 text-sm leading-relaxed">
+                      {lumeraWhatIDid[4].d}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <Reveal className="aspect-square w-full">
+
+            <Reveal className="w-full">
               <img
                 src={moodboard}
                 alt="Lumera moodboard grid"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                className="w-full h-auto object-scale-down"
                 loading="lazy"
               />
             </Reveal>
           </div>
 
-          <div className="mt-16">
-            <div className="font-display text-gold mb-8 text-sm tracking-[0.2em] uppercase">
-              What I Did
-            </div>
-            <div className="grid gap-px bg-gold/20 sm:grid-cols-2">
-              {lumeraWhatIDid.map((m, i) => (
-                <div key={m.t} className={`bg-chocolate p-8 ${i === 4 ? "sm:col-span-2" : ""}`}>
-                  <h3 className="font-display text-cream text-xl">{m.t}</h3>
-                  <p className="text-cream/75 mt-3 text-sm leading-relaxed">{m.d}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-12 grid gap-6 sm:grid-cols-3">
-            <Reveal className="aspect-square w-full">
-              <img
-                src={lumeraLogo}
-                alt="Lumera logo"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
-                loading="lazy"
-              />
-            </Reveal>
-            <Reveal className="aspect-[4/5] w-full">
+          <div className="mt-16 grid gap-6 sm:grid-cols-3">
+            <Reveal className="w-full">
               <img
                 src={productMockup}
                 alt="Product mockup"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                className="w-full h-[350px] object-scale-down"
                 loading="lazy"
               />
             </Reveal>
-            <Reveal className="aspect-[4/5] w-full">
+            <Reveal className="w-full">
+              <img
+                src={lumeraLogo}
+                alt="Lumera logo"
+                className="w-full h-[350px] object-scale-down"
+                loading="lazy"
+              />
+            </Reveal>
+            <Reveal className="w-full">
               <img
                 src={productPhotography}
                 alt="Product photography"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+                className="w-full h-[350px] object-scale-down"
                 loading="lazy"
               />
             </Reveal>
