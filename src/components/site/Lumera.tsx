@@ -10,11 +10,11 @@ import productPhotography from "@/assets/projects/lumera/product-photography.png
 import ghlForm from "@/assets/projects/gohighlevel/form.png";
 import ghlBooking from "@/assets/projects/gohighlevel/booking-calendar.png";
 import ghlProductPage from "@/assets/projects/gohighlevel/product-page.png";
-import opsSheets from "@/assets/projects/operations-layer/google-sheets.png";
+import opsSheetsAppts from "@/assets/projects/operations-layer/google-sheets-appointments.png";
+import opsSheetsTracker from "@/assets/projects/operations-layer/google-sheets-tracker.png";
 import opsZapier from "@/assets/projects/operations-layer/zapier.png";
 import opsTrello from "@/assets/projects/operations-layer/trello.png";
 import opsAsana from "@/assets/projects/operations-layer/asana.png";
-import opsWeekly from "@/assets/projects/operations-layer/weekly-report.png";
 
 const lumeraWhatIDid = [
   {
@@ -62,22 +62,36 @@ const workflowSteps = [
   },
 ];
 
-const opsCards = [
+const opsSteps = [
   {
-    t: "Zapier + Google Sheets",
-    d: "GHL sends lead data via webhook when a consultation is booked. Zapier catches it and creates a new row automatically — feeding into a multi-tab tracker covering Leads, Appointments, Customers, VIP, Inactive, Follow-ups, and Weekly Reports.",
+    n: "01",
+    heading: "Zapier Integration",
+    description: "GHL sends lead data via webhook when a consultation is booked. Zapier catches it and creates a new row automatically in the Leads tracker tab.",
+    images: [{ src: opsZapier, alt: "Zapier automation success", caption: "zapier" }],
   },
   {
-    t: "Trello Operations Board",
-    d: "An 8-column board manages all recurring VA tasks — Inbox, To Do, In Progress, Waiting for Client, QA, Completed, Issues, and Templates. Each card has labels, due dates, and step-by-step process checklists.",
+    n: "02",
+    heading: "Leads & Appointments Tracker",
+    description: "Leads flow from GHL into the tracker's Leads tab. Appointments are tracked with status, contact info, and follow-up dates in the Appointments tab.",
+    images: [{ src: opsSheetsAppts, alt: "Google Sheets appointments tracker", caption: "appointments tracker" }],
   },
   {
-    t: "Workflow Issue Log + Weekly Reporting",
-    d: "Every workflow was tested and documented with expected vs. actual results logged. A Weekly Report tab tracks new leads, bookings, attended, no-shows, follow-ups, and open issues week by week.",
+    n: "03",
+    heading: "Weekly Issue Log & Reporting",
+    description: "A Weekly Report tab tracks new leads, bookings, attended, no-shows, follow-ups, and open issues. Workflow tests are logged with expected vs. actual results.",
+    images: [{ src: opsSheetsTracker, alt: "Google Sheets weekly report tracker", caption: "tracker" }],
   },
   {
-    t: "Asana Weekly Project",
-    d: "A weekly operations project tracks all tasks with assignee, priority, due date, and status. A full operations simulation was completed and documented with subtasks and activity comments in Asana.",
+    n: "04",
+    heading: "Trello Operations Board",
+    description: "An 8-column board manages all recurring VA tasks — Inbox, To Do, In Progress, Waiting for Client, QA, Completed, Issues, and Templates. Each card has labels, due dates, and step-by-step process checklists.",
+    images: [{ src: opsTrello, alt: "Trello operations board", caption: "trello" }],
+  },
+  {
+    n: "05",
+    heading: "Asana Weekly Project",
+    description: "A weekly operations project tracks all tasks with assignee, priority, due date, and status. A full operations simulation was completed and documented with subtasks and activity comments in Asana.",
+    images: [{ src: opsAsana, alt: "Asana weekly project", caption: "asana" }],
   },
 ];
 
@@ -338,7 +352,10 @@ export function Lumera() {
       {/* Operations Layer */}
       <div className="bg-chocolate py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <SectionLabel>Concept Projects / Lumera</SectionLabel>
+          <div className="flex items-center justify-between">
+            <SectionLabel>Lumera / Operations Layer</SectionLabel>
+            <PageNumber index={11} total={12} />
+          </div>
           <h3 className="font-display text-yellow-pale mt-6 max-w-3xl text-5xl leading-tight sm:text-7xl">
             Operations Layer.
           </h3>
@@ -348,56 +365,36 @@ export function Lumera() {
             documented, and every workflow was tested with real data before being marked complete.
           </p>
 
-          <div className="mt-14 grid gap-px bg-gold/20 sm:grid-cols-2">
-            {opsCards.map((c) => (
-              <div key={c.t} className="bg-chocolate p-8">
-                <h4 className="font-display text-yellow-pale text-2xl">{c.t}</h4>
-                <p className="text-cream/75 mt-3 leading-relaxed">{c.d}</p>
-              </div>
-            ))}
-          </div>
+          <div className="mt-14 flex flex-col gap-16">
+            {opsSteps.map((s) => (
+              <Reveal key={s.n}>
+                <div className="flex flex-col gap-6">
+                  <div>
+                    <div className="font-display text-gold text-sm tracking-[0.2em] uppercase">
+                      {s.n} / {s.heading.toUpperCase()}
+                    </div>
+                    <h4 className="font-display text-yellow-pale text-3xl mt-3">
+                      {s.heading}
+                    </h4>
+                    <p className="text-cream/75 mt-4 max-w-2xl leading-relaxed">
+                      {s.description}
+                    </p>
+                  </div>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-3 lg:grid-cols-5">
-            <Reveal className="aspect-[16/9] w-full">
-              <img
-                src={opsSheets}
-                alt="Google Sheets tracker"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
-                loading="lazy"
-              />
-            </Reveal>
-            <Reveal className="aspect-[16/9] w-full">
-              <img
-                src={opsZapier}
-                alt="Zapier success"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
-                loading="lazy"
-              />
-            </Reveal>
-            <Reveal className="aspect-[16/9] w-full">
-              <img
-                src={opsTrello}
-                alt="Trello board"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
-                loading="lazy"
-              />
-            </Reveal>
-            <Reveal className="aspect-[16/9] w-full">
-              <img
-                src={opsAsana}
-                alt="Asana project"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
-                loading="lazy"
-              />
-            </Reveal>
-            <Reveal className="aspect-[16/9] w-full">
-              <img
-                src={opsWeekly}
-                alt="Weekly report"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
-                loading="lazy"
-              />
-            </Reveal>
+                  <div className="bg-soft-black rounded-xl p-3 max-w-4xl mx-auto">
+                    <img
+                      src={s.images[0].src}
+                      alt={s.images[0].alt}
+                      className="w-full max-h-80 object-contain border border-gold/20 shadow-md shadow-black/60"
+                      loading="lazy"
+                    />
+                    <p className="text-cream/50 text-[0.65rem] tracking-[0.15em] uppercase mt-2">
+                      {s.images[0].caption}
+                    </p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </div>
