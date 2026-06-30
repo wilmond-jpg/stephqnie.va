@@ -3,9 +3,8 @@ import { PageNumber } from "./PageNumber";
 import { Reveal } from "./Reveal";
 import logo from "@/assets/projects/aura-crystals/logo.png";
 import careGuide from "@/assets/projects/aura-crystals/care-guide.jpg";
-import thankYouCard from "@/assets/projects/aura-crystals/thank-you-card.png";
 import instagramProfile from "@/assets/projects/aura-crystals/instagram-profile.png";
-import purchaseInsert from "@/assets/projects/aura-crystals/purchase-insert.png";
+import img0117 from "@/assets/projects/aura-crystals/img-0117.png";
 
 const managed = [
   {
@@ -51,24 +50,14 @@ export function ProjectAuraCrystals() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
-            <Reveal className="aspect-square w-full">
-              <img
-                src={logo}
-                alt="Aura logo"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
-                loading="lazy"
-              />
-            </Reveal>
-            <Reveal className="aspect-[3/4] w-full">
-              <img
-                src={careGuide}
-                alt="Care guide"
-                className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
-                loading="lazy"
-              />
-            </Reveal>
-          </div>
+          <Reveal className="w-full bg-card-warm">
+            <img
+              src={logo}
+              alt="Aura logo"
+              className="aspect-square w-full object-cover"
+              loading="lazy"
+            />
+          </Reveal>
         </div>
 
         <div className="mt-16">
@@ -86,27 +75,27 @@ export function ProjectAuraCrystals() {
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
-          <Reveal className="aspect-square w-full">
+          <Reveal className="w-full">
             <img
-              src={thankYouCard}
-              alt="Thank-you card"
-              className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+              src={careGuide}
+              alt="Care guide"
+              className="w-full h-[350px] object-scale-down"
               loading="lazy"
             />
           </Reveal>
-          <Reveal className="aspect-[4/5] w-full">
+          <Reveal className="w-full">
             <img
               src={instagramProfile}
               alt="Instagram profile"
-              className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+              className="w-full h-[350px] object-scale-down"
               loading="lazy"
             />
           </Reveal>
-          <Reveal className="aspect-[4/5] w-full">
+          <Reveal className="w-full">
             <img
-              src={purchaseInsert}
-              alt="Purchase insert"
-              className="h-full w-full object-cover border border-gold/20 shadow-md shadow-black/60 brightness-110"
+              src={img0117}
+              alt="Aura crystal"
+              className="w-full h-[350px] object-scale-down"
               loading="lazy"
             />
           </Reveal>
