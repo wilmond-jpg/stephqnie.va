@@ -220,7 +220,7 @@ export function Lumera() {
       </div>
 
       {/* Workflow */}
-      <div className="bg-soft-black py-24 sm:py-32">
+      <div id="lumera-workflow" className="bg-soft-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="flex items-center justify-between">
             <SectionLabel>Lumera Skincare / Workflow</SectionLabel>
@@ -248,7 +248,7 @@ export function Lumera() {
       </div>
 
       {/* GHL */}
-      <div className="bg-cream text-chocolate py-24 sm:py-32">
+      <div id="lumera-ghl" className="bg-cream text-chocolate py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="flex items-center justify-between">
             <SectionLabel>Lumera / GoHighLevel</SectionLabel>
@@ -350,7 +350,7 @@ export function Lumera() {
       </div>
 
       {/* Operations Layer */}
-      <div className="bg-chocolate py-24 sm:py-32">
+      <div id="lumera-operations" className="bg-chocolate py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <SectionLabel>Lumera / Operations Layer</SectionLabel>
           <h3 className="font-display text-yellow-pale mt-6 max-w-3xl text-5xl leading-tight sm:text-7xl">
@@ -416,7 +416,7 @@ export function Lumera() {
       </div>
 
       {/* Results */}
-      <div className="bg-soft-black py-24 sm:py-32">
+      <div id="lumera-results" className="bg-soft-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="flex items-center justify-between">
             <SectionLabel>Lumera / Results</SectionLabel>
